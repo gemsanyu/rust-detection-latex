@@ -1,0 +1,170 @@
+\begin{thebibliography}{999}
+
+\bibitem[Koch et~al.(2016)Koch, Varney, Thompson, Moghissi, Gould, and
+  Payer]{Koch2016}
+Koch, G.; Varney, J.; Thompson, N.; Moghissi, O.; Gould, M.; Payer, J.
+\newblock International measures of prevention, application, and economics of
+  corrosion technologies study.
+\newblock {\em NACE international 216} {\bf 2016}.
+
+\bibitem[Wang et~al.(2019)Wang, LI, XU, YANG, and SUN]{Wang2019}
+Wang, Z.; LI, Y.; XU, W.; YANG, L.; SUN, C.
+\newblock Analysis of Global Research Status and Development Trends in the
+  Field of Corrosion and Protection: Based on Bibliometrics and Information
+  Visualization Analysis.
+\newblock {\em Journal of Chinese Society for Corrosion and protection} {\bf
+  2019}, {\em 39},~201.
+\newblock {\url{https://doi.org/10.11902/1005.4537.2018.123}}.
+
+\bibitem[Igoe and Parisi(2016)]{Igoe2016}
+Igoe, D.; Parisi, A.V.
+\newblock Characterization of the corrosion of iron using a smartphone camera.
+\newblock {\em Instrumentation Science \& Technology} {\bf 2016}, {\em
+  44},~139--147.
+\newblock {\url{https://doi.org/10.1080/10739149.2015.1082484}}.
+
+\bibitem[Bonnin-Pascual and Ortiz(2014)]{Pascual2014}
+Bonnin-Pascual, F.; Ortiz, A., Corrosion Detection for Automated Visual
+  Inspection;  2014; pp. 619--632.
+\newblock {\url{https://doi.org/10.5772/57209}}.
+
+\bibitem[Chen et~al.(2012)Chen, Shen, Lei, and Chang]{Chen2012}
+Chen, P.H.; Shen, H.K.; Lei, C.Y.; Chang, L.M.
+\newblock Support-vector-machine-based method for automated steel bridge rust
+  assessment.
+\newblock {\em Automation in Construction} {\bf 2012}, {\em 23},~9--19.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.autcon.2011.12.001}}.
+
+\bibitem[Nash et~al.(2022)Nash, Zheng, and Birbilis]{Nash2022}
+Nash, W.; Zheng, L.; Birbilis, N.
+\newblock Deep learning corrosion detection with confidence.
+\newblock {\em npj Materials Degradation} {\bf 2022}, {\em 6},~26.
+\newblock {\url{https://doi.org/10.1038/s41529-022-00232-6}}.
+
+\bibitem[Liu et~al.(2023)Liu, Luo, Lu, Jin, Vu, and Kong]{Liu2023}
+Liu, X.; Luo, Y.; Lu, Y.; Jin, Y.; Vu, Q.V.; Kong, Z.
+\newblock A dual attention network for automatic metallic corrosion detection
+  in natural environment.
+\newblock {\em Journal of Building Engineering} {\bf 2023}, {\em 75},~107014.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.jobe.2023.107014}}.
+
+\bibitem[Lin et~al.(2017)Lin, Dollár, Girshick, He, Hariharan, and
+  Belongie]{Lin2017}
+Lin, T.Y.; Dollár, P.; Girshick, R.; He, K.; Hariharan, B.; Belongie, S.
+\newblock Feature Pyramid Networks for Object Detection.
+\newblock In Proceedings of the 2017 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR),  2017, pp. 936--944.
+\newblock {\url{https://doi.org/10.1109/CVPR.2017.106}}.
+
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{Ronneberger2015}
+Ronneberger, O.; Fischer, P.; Brox, T.
+\newblock U-Net: Convolutional Networks for Biomedical Image Segmentation.
+\newblock In Proceedings of the Medical Image Computing and Computer-Assisted
+  Intervention -- MICCAI 2015; Navab, N.; Hornegger, J.; Wells, W.M.; Frangi,
+  A.F., Eds., Cham,  2015; pp. 234--241.
+
+\bibitem[Zhou et~al.(2018)Zhou, Rahman~Siddiquee, Tajbakhsh, and
+  Liang]{Zhou2018}
+Zhou, Z.; Rahman~Siddiquee, M.M.; Tajbakhsh, N.; Liang, J.
+\newblock UNet++: A Nested U-Net Architecture for Medical Image Segmentation.
+\newblock In Proceedings of the Deep Learning in Medical Image Analysis and
+  Multimodal Learning for Clinical Decision Support; Stoyanov, D.; Taylor, Z.;
+  Carneiro, G.; Syeda-Mahmood, T.; Martel, A.; Maier-Hein, L.; Tavares, J.M.R.;
+  Bradley, A.; Papa, J.P.; Belagiannis, V.;  et~al., Eds., Cham,  2018; pp.
+  3--11.
+
+\bibitem[Fan et~al.(2020)Fan, Wang, Li, and Wang]{Fan2020}
+Fan, T.; Wang, G.; Li, Y.; Wang, H.
+\newblock MA-Net: A Multi-Scale Attention Network for Liver and Tumor
+  Segmentation.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~179656--179665.
+\newblock {\url{https://doi.org/10.1109/ACCESS.2020.3025372}}.
+
+\bibitem[Chaurasia and Culurciello(2017)]{Chaurasia2017}
+Chaurasia, A.; Culurciello, E.
+\newblock LinkNet: Exploiting encoder representations for efficient semantic
+  segmentation.
+\newblock In Proceedings of the 2017 IEEE Visual Communications and Image
+  Processing (VCIP),  2017, pp. 1--4.
+\newblock {\url{https://doi.org/10.1109/VCIP.2017.8305148}}.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016}
+He, K.; Zhang, X.; Ren, S.; Sun, J.
+\newblock Deep Residual Learning for Image Recognition.
+\newblock In Proceedings of the 2016 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR),  2016, pp. 770--778.
+\newblock {\url{https://doi.org/10.1109/CVPR.2016.90}}.
+
+\bibitem[Han et~al.(2017)Han, Zhang, and Qiao]{Han2017}
+Han, H.G.; Zhang, S.; Qiao, J.F.
+\newblock An adaptive growing and pruning algorithm for designing recurrent
+  neural network.
+\newblock {\em Neurocomputing} {\bf 2017}, {\em 242},~51--62.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.neucom.2017.02.038}}.
+
+\bibitem[Sanh et~al.(2020)Sanh, Wolf, and Rush]{Sanh2020}
+Sanh, V.; Wolf, T.; Rush, A.
+\newblock Movement Pruning: Adaptive Sparsity by Fine-Tuning.
+\newblock In Proceedings of the Advances in Neural Information Processing
+  Systems; Larochelle, H.; Ranzato, M.; Hadsell, R.; Balcan, M.; Lin, H., Eds.
+  Curran Associates, Inc.,  2020, Vol.~33, pp. 20378--20389.
+
+\bibitem[Bianchi and Hebdon(2021)]{Bianchi2021Dataset}
+Bianchi, E.; Hebdon, M.
+\newblock Corrosion Condition State Semantic Segmentation Dataset {\bf 2021}.
+\newblock {\url{https://doi.org/10.7294/16624663.v2}}.
+
+\bibitem[Bianchi and Hebdon(2022)]{Bianchi2022Journal}
+Bianchi, E.; Hebdon, M.
+\newblock Development of Extendable Open-Source Structural Inspection Datasets.
+\newblock {\em Journal of Computing in Civil Engineering} {\bf 2022}, {\em
+  36},~04022039.
+\newblock {\url{https://doi.org/10.1061/(ASCE)CP.1943-5487.0001045}}.
+
+\bibitem[Salehi et~al.(2017)Salehi, Erdogmus, and Gholipour]{Salehi2017}
+Salehi, S.S.M.; Erdogmus, D.; Gholipour, A.
+\newblock Tversky Loss Function for Image Segmentation Using 3D Fully
+  Convolutional Deep Networks.
+\newblock In Proceedings of the Machine Learning in Medical Imaging; Wang, Q.;
+  Shi, Y.; Suk, H.I.; Suzuki, K., Eds., Cham,  2017; pp. 379--387.
+
+\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{Long2015}
+Long, J.; Shelhamer, E.; Darrell, T.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In Proceedings of the 2015 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR), Los Alamitos, CA, USA,  jun 2015; pp. 3431--3440.
+\newblock {\url{https://doi.org/10.1109/CVPR.2015.7298965}}.
+
+\bibitem[Huang et~al.(2017)Huang, Liu, Van Der~Maaten, and
+  Weinberger]{Huang2017}
+Huang, G.; Liu, Z.; Van Der~Maaten, L.; Weinberger, K.Q.
+\newblock Densely Connected Convolutional Networks.
+\newblock In Proceedings of the 2017 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR),  2017, pp. 2261--2269.
+\newblock {\url{https://doi.org/10.1109/CVPR.2017.243}}.
+
+\bibitem[Kaluva et~al.(2018)Kaluva, Khened, Kori, and
+  Krishnamurthi]{Krishna2018}
+Kaluva, K.C.; Khened, M.; Kori, A.; Krishnamurthi, G.
+\newblock 2D-Densely Connected Convolution Neural Networks for automatic Liver
+  and Tumor Segmentation,  2018,
+  \href{http://arxiv.org/abs/1802.02182}{{\normalfont
+  [arXiv:cs.CV/1802.02182]}}.
+
+\bibitem[Molchanov et~al.(2019)Molchanov, Mallya, Tyree, Frosio, and
+  Kautz]{Molchanov2019}
+Molchanov, P.; Mallya, A.; Tyree, S.; Frosio, I.; Kautz, J.
+\newblock Importance Estimation for Neural Network Pruning.
+\newblock In Proceedings of the 2019 IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR),  2019, pp. 11256--11264.
+\newblock {\url{https://doi.org/10.1109/CVPR.2019.01152}}.
+
+\bibitem[Smith(2017)]{Smith2017}
+Smith, L.N.
+\newblock Cyclical Learning Rates for Training Neural Networks.
+\newblock In Proceedings of the 2017 IEEE Winter Conference on Applications of
+  Computer Vision (WACV),  2017, pp. 464--472.
+\newblock {\url{https://doi.org/10.1109/WACV.2017.58}}.
+
+\end{thebibliography}
