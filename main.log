@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.25)  5 SEP 2024 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.25)  12 SEP 2024 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1543,13 +1543,13 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 i-eps-converted-to.pdf Definitions/logo-mdpi.eps>
 (epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-mdpi-eps-converted-to.pdf, id=49, 74.2775pt x 49.18375pt>
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=53, 74.2775pt x 49.18375pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
 put line 180.
 (pdftex.def)             Requested size: 42.96877pt x 28.45274pt.
-<Definitions/logo-orcid.pdf, id=51, 102.3825pt x 102.3825pt>
+<Definitions/logo-orcid.pdf, id=55, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
 Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 180.
@@ -1621,10 +1621,10 @@ although it is yet undefined on input line 248.
 Package acronym Info: Label `acro:nea' newly defined as it shall be overridden
 although it is yet undefined on input line 249.
 Package acronym Info: Label `acro:fcn' newly defined as it shall be overridden
-although it is yet undefined on input line 278.
+although it is yet undefined on input line 274.
 Package acronym Info: Label `acro:relu' newly defined as it shall be overridden
 
-although it is yet undefined on input line 282.
+although it is yet undefined on input line 278.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1653,12 +1653,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [4]
-<figures/ccsc-example.pdf, id=159, 399.08899pt x 232.4695pt>
+<figures/ccsc-example.pdf, id=163, 399.08899pt x 232.4695pt>
 File: figures/ccsc-example.pdf Graphic file (type pdf)
 <use figures/ccsc-example.pdf>
 Package pdftex.def Info: figures/ccsc-example.pdf  used on input line 494.
 (pdftex.def)             Requested size: 197.17761pt x 114.85814pt.
-<figures/nea-example.pdf, id=162, 399.08899pt x 169.61267pt>
+<figures/nea-example.pdf, id=166, 399.08899pt x 169.61267pt>
 File: figures/nea-example.pdf Graphic file (type pdf)
 <use figures/nea-example.pdf>
 Package pdftex.def Info: figures/nea-example.pdf  used on input line 518.
@@ -1675,13 +1675,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [5 <./figures/ccsc-example.pdf> <./figures/nea-example.pdf>]
-<figures/iou_training_progress.pdf, id=240, 530.0075pt x 281.13531pt>
+<figures/iou_training_progress.pdf, id=244, 530.0075pt x 281.13531pt>
 File: figures/iou_training_progress.pdf Graphic file (type pdf)
 <use figures/iou_training_progress.pdf>
 Package pdftex.def Info: figures/iou_training_progress.pdf  used on input line 
 585.
 (pdftex.def)             Requested size: 354.91728pt x 188.261pt.
-<figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf, id=244, 395.90533pt 
+<figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf, id=248, 395.90533pt 
 x 312.02145pt>
 File: figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf Graphic file (ty
 pe pdf)
@@ -1689,7 +1689,7 @@ pe pdf)
 Package pdftex.def Info: figures/pruning/unet_linear_0.5_NEAtraining_progress.p
 df  used on input line 609.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf, id=245, 395.90533pt x 3
+<figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf, id=249, 395.90533pt x 3
 12.02145pt>
 File: figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf Graphic file (type 
 pdf)
@@ -1697,7 +1697,7 @@ pdf)
 Package pdftex.def Info: figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf 
  used on input line 616.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf, id=246, 395.90533p
+<figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf, id=250, 395.90533p
 t x 312.02145pt>
 File: figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf Graphic file (
 type pdf)
@@ -1705,7 +1705,7 @@ type pdf)
 Package pdftex.def Info: figures/pruning/unet_movement_0.5_NEAtraining_progress
 .pdf  used on input line 623.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf, id=247, 395.90533pt 
+<figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf, id=251, 395.90533pt 
 x 312.02145pt>
 File: figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf Graphic file (ty
 pe pdf)
@@ -1713,7 +1713,7 @@ pe pdf)
 Package pdftex.def Info: figures/pruning/fpn_linear_0.5_CCSCtraining_progress.p
 df  used on input line 630.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf, id=248, 395.90533pt x 3
+<figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf, id=252, 395.90533pt x 3
 12.02145pt>
 File: figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf Graphic file (type 
 pdf)
@@ -1721,7 +1721,7 @@ pdf)
 Package pdftex.def Info: figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf 
  used on input line 637.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf, id=249, 395.90533p
+<figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf, id=253, 395.90533p
 t x 312.02145pt>
 File: figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf Graphic file (
 type pdf)
@@ -1739,14 +1739,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [6 <./figures/iou_training_progress.pdf>]
-<figures/test/pruning-testing-score_NEA_agp.pdf, id=296, 337.59875pt x 434.4468
+<figures/test/pruning-testing-score_NEA_agp.pdf, id=298, 337.59875pt x 434.4468
 5pt>
 File: figures/test/pruning-testing-score_NEA_agp.pdf Graphic file (type pdf)
 <use figures/test/pruning-testing-score_NEA_agp.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_agp.pdf  used o
 n input line 693.
 (pdftex.def)             Requested size: 109.39656pt x 140.77591pt.
-<figures/test/pruning-testing-score_NEA_linear.pdf, id=297, 323.87561pt x 434.4
+<figures/test/pruning-testing-score_NEA_linear.pdf, id=299, 323.87561pt x 434.4
 4685pt>
 File: figures/test/pruning-testing-score_NEA_linear.pdf Graphic file (type pdf)
 
@@ -1754,7 +1754,7 @@ File: figures/test/pruning-testing-score_NEA_linear.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_linear.pdf  use
 d on input line 700.
 (pdftex.def)             Requested size: 104.89769pt x 140.70963pt.
-<figures/test/pruning-testing-score_NEA_movement.pdf, id=298, 317.49239pt x 434
+<figures/test/pruning-testing-score_NEA_movement.pdf, id=300, 317.49239pt x 434
 .44685pt>
 File: figures/test/pruning-testing-score_NEA_movement.pdf Graphic file (type pd
 f)
@@ -1762,14 +1762,14 @@ f)
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_movement.pdf  u
 sed on input line 707.
 (pdftex.def)             Requested size: 103.39996pt x 141.49185pt.
-<figures/test/pruning-testing-score_CCSC_agp.pdf, id=299, 343.98198pt x 434.446
+<figures/test/pruning-testing-score_CCSC_agp.pdf, id=301, 343.98198pt x 434.446
 85pt>
 File: figures/test/pruning-testing-score_CCSC_agp.pdf Graphic file (type pdf)
 <use figures/test/pruning-testing-score_CCSC_agp.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_CCSC_agp.pdf  used 
 on input line 719.
 (pdftex.def)             Requested size: 110.14543pt x 139.112pt.
-<figures/test/pruning-testing-score_CCSC_linear.pdf, id=300, 330.25883pt x 434.
+<figures/test/pruning-testing-score_CCSC_linear.pdf, id=302, 330.25883pt x 434.
 44685pt>
 File: figures/test/pruning-testing-score_CCSC_linear.pdf Graphic file (type pdf
 )
@@ -1777,7 +1777,7 @@ File: figures/test/pruning-testing-score_CCSC_linear.pdf Graphic file (type pdf
 Package pdftex.def Info: figures/test/pruning-testing-score_CCSC_linear.pdf  us
 ed on input line 726.
 (pdftex.def)             Requested size: 106.3954pt x 139.9539pt.
-<figures/test/pruning-testing-score_CCSC_movement.pdf, id=301, 317.49239pt x 43
+<figures/test/pruning-testing-score_CCSC_movement.pdf, id=303, 317.49239pt x 43
 4.44685pt>
 File: figures/test/pruning-testing-score_CCSC_movement.pdf Graphic file (type p
 df)
@@ -1800,16 +1800,14 @@ _NEAtraining_progress.pdf> <./figures/pruning/fpn_linear_0.5_CCSCtraining_progr
 ess.pdf> <./figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf> <./figures/p
 runing/fpn_movement_0.5_CCSCtraining_progress.pdf> <./figures/test/pruning-test
 ing-score_NEA_agp.pdf> <./figures/test/pruning-testing-score_NEA_linear.pdf> <.
-/figures/test/pruning-testing-score_NEA_movement.pdf> <./figures/test/pruning-t
-esting-score_CCSC_agp.pdf> <./figures/test/pruning-testing-score_CCSC_linear.pd
-f> <./figures/test/pruning-testing-score_CCSC_movement.pdf>]
-<figures/pruning-results/NEA/11.jpg, id=628, 372.9132pt x 220.4235pt>
+/figures/test/pruning-testing-score_NEA_movement.pdf>]
+<figures/pruning-results/NEA/11.jpg, id=555, 372.9132pt x 220.4235pt>
 File: figures/pruning-results/NEA/11.jpg Graphic file (type jpg)
 <use figures/pruning-results/NEA/11.jpg>
 Package pdftex.def Info: figures/pruning-results/NEA/11.jpg  used on input line
  792.
 (pdftex.def)             Requested size: 149.8522pt x 88.5748pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg, id=629, 372.9132pt x 220.42
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg, id=556, 372.9132pt x 220.42
 35pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg Graphic file (type jpg)
 
@@ -1817,7 +1815,7 @@ File: figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg  use
 d on input line 799.
 (pdftex.def)             Requested size: 149.8522pt x 88.5748pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg, id=630, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg, id=557, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg Graphic file (type jp
 g)
@@ -1825,7 +1823,7 @@ g)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg  u
 sed on input line 806.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg, id=631, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg, id=558, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg Graphic file (type jp
 g)
@@ -1833,7 +1831,7 @@ g)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg  u
 sed on input line 812.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg, id=632, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg, id=559, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg Graphic file (type jp
 g)
@@ -1841,7 +1839,7 @@ g)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg  u
 sed on input line 818.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg, id=633, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg, id=560, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg Graphic file (type
  jpg)
@@ -1849,7 +1847,7 @@ File: figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg Graphic file (type
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg
   used on input line 825.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg, id=634, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg, id=561, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg Graphic file (type
  jpg)
@@ -1857,7 +1855,7 @@ File: figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg Graphic file (type
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg
   used on input line 831.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg, id=635, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg, id=562, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg Graphic file (type
  jpg)
@@ -1865,7 +1863,7 @@ File: figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg Graphic file (type
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg
   used on input line 837.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg, id=636, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg, id=563, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg Graphic file (ty
 pe jpg)
@@ -1873,7 +1871,7 @@ pe jpg)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.2.j
 pg  used on input line 844.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg, id=637, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg, id=564, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg Graphic file (ty
 pe jpg)
@@ -1881,7 +1879,7 @@ pe jpg)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.5.j
 pg  used on input line 850.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg, id=638, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg, id=565, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg Graphic file (ty
 pe jpg)
@@ -1889,7 +1887,7 @@ pe jpg)
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.9.j
 pg  used on input line 856.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-
+ (main.bbl
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1898,24 +1896,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[8 <./figures/pruning-results/NEA/11.jpg> <./figures/pruning-results/fpn_NEA_ag
+[8 <./figures/test/pruning-testing-score_CCSC_agp.pdf> <./figures/test/pruning-
+testing-score_CCSC_linear.pdf> <./figures/test/pruning-testing-score_CCSC_movem
+ent.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[9 <./figures/pruning-results/NEA/11.jpg> <./figures/pruning-results/fpn_NEA_ag
 p/10/mask_0.jpg> <./figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg> <./fig
 ures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg> <./figures/pruning-results/fp
 n_NEA_agp/10/mask_0.9.jpg> <./figures/pruning-results/fpn_NEA_linear/10/mask_0.
 2.jpg> <./figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg> <./figures/pr
 uning-results/fpn_NEA_linear/10/mask_0.9.jpg> <./figures/pruning-results/fpn_NE
 A_movement/10/mask_0.2.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask
-_0.5.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg>]
-(main.bbl
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[9])
+_0.5.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1932,14 +1931,14 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9E90F2DE658DDFAB7BDB3457CDA6F0BD;1056.
+(rerunfilecheck)             Checksum: 08E2337A9840580A45F588F573891281;1187.
  ) 
 Here is how much of TeX's memory you used:
- 34977 strings out of 474486
- 664749 string characters out of 5744227
+ 34976 strings out of 474486
+ 664745 string characters out of 5744227
  1956542 words of memory out of 5000000
- 56088 multiletter control sequences out of 15000+600000
- 645235 words of font info for 473 fonts, out of 8000000 for 9000
+ 56089 multiletter control sequences out of 15000+600000
+ 645076 words of font info for 471 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,124p,4704b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\USER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0
@@ -1955,9 +1954,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/USER/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/USER
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/US
 ER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (10 pages, 2532728 bytes).
+Output written on main.pdf (10 pages, 2533710 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 109793 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 109801 words of extra memory for PDF output out of 128383 (max. 10000000)
 

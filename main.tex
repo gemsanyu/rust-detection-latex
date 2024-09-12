@@ -193,7 +193,7 @@ corrosion is \$25 trillion~\cite{Koch2016}.
 Therefore, it is imperative to
 inspect infrastructures for metallic corrosion
 regularly. Corrosion detection and maintance
-are vtial to prevent metallic corrosion~\cite{Wang2019}.
+are vital to prevent metallic corrosion~\cite{Wang2019}.
 
 Commonly, corrosion detection is conducted 
 visually by experts on the field. The inspection is 
@@ -248,12 +248,10 @@ are evaluated on two metal corrosion image datasets,
 i.e., the \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and 
 the \ac{nea} dataset \cite{Liu2023}. 
 
-
-\section{Methods}
+\section{Background}
 This section describes the considered architectures,
-the pruning algorithms, and the datasets. Before that,
-we briefly describe the loss function used to 
-train the models and the \ac{iou} metric.
+the pruning algorithms, the loss function
+to train the model and the evaluation metric.
 Throughout all stages, the models are trained to minimize
 the Tversky loss function~\cite{Salehi2017} as given
 by:
@@ -271,9 +269,7 @@ models is the \ac{iou}, which is given by:
     IoU = \frac{\text{TP}}{\text{TP}+\text{FP}+\text{FN}}.
 \end{equation}
 
-
-\subsection{Architectures}
-
+\subsection{Architecture}
 U-NET~\cite{Ronneberger2015} is an extension to
  \ac{fcn}~\cite{Long2015} where the architecture
  comprises two parts, the left contracting path
@@ -319,9 +315,9 @@ e.g., U-Net, U-Net++, and Densely \ac{fcn}~\cite{Krishna2018}.
 
 Similary to the previous U-Net-based architectures,
 \ac{fpn}~\cite{Lin2017} can also basically 
-be divided into two pahts, the bottom-up path,
+be divided into two paths, the bottom-up path,
 and the top-down path. The bottom-up
-path computes a feature hierarchi consisting
+path computes a feature hierarchy consisting
 of several scaled feature maps with a scaling
 step of two. The path comprises several network
 \textit{stages}, each stage consists of multiple layers
@@ -338,8 +334,8 @@ path of the same pyramid level through a lateral
 connection. The design of \ac{fpn}
 is flexible in the choice of module
 for the building blocks.
-However, the experimental evaluation in 
-\cite{Lin2017} on varying the modules only
+However, the experimental evaluation show by 
+Lin et al.~\cite{Lin2017} on varying the modules only
 shows marginal difference in the resulted model's
 performance. Therefore, similar to the original study,
 this study opts for the simple design choice.
@@ -472,6 +468,10 @@ model parameters at the $t$-th training iteration. The schedule
 of sparsity level for each training iteration in \ac{mp}
 is the same as \ac{agp}, i.e., as given by \eqref{eq:methods:pruning:agp}.
 
+\section{Proposed Method}
+This section describes the proposed framework
+to train lightweight semantic segmentation models
+for rust detection. 
 
 \subsection{Datasets}
 In this study, the models are trained and evaluated on two metal corrosion image
