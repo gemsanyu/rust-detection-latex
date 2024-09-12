@@ -48,6 +48,68 @@ Liu, X.; Luo, Y.; Lu, Y.; Jin, Y.; Vu, Q.V.; Kong, Z.
 \newblock {\em Journal of Building Engineering} {\bf 2023}, {\em 75},~107014.
 \newblock {\url{https://doi.org/https://doi.org/10.1016/j.jobe.2023.107014}}.
 
+\bibitem[Petricca et~al.(2016)Petricca, Moss, Figueroa, and
+  Broen]{Petricca2016}
+Petricca, L.; Moss, T.; Figueroa, G.; Broen, S.
+\newblock Corrosion Detection Using A.I : A Comparison of Standard Computer
+  Vision Techniques and Deep Learning Model.
+\newblock  05 2016, Vol.~6, pp. 91--99.
+\newblock {\url{https://doi.org/10.5121/csit.2016.60608}}.
+
+\bibitem[Atha and Jahanshahi(2018)]{Atha2018}
+Atha, D.J.; Jahanshahi, M.R.
+\newblock Evaluation of deep learning approaches based on convolutional neural
+  networks for corrosion detection.
+\newblock {\em Structural Health Monitoring} {\bf 2018}, {\em 17},~1110--1128.
+\newblock {\url{https://doi.org/10.1177/1475921717737051}}.
+
+\bibitem[Papamarkou et~al.(2021)Papamarkou, Guy, Kroencke, Miller, Robinette,
+  Schultz, Hinkle, Pullum, Schuman, Renshaw, and Chatzidakis]{Papamarkou2021}
+Papamarkou, T.; Guy, H.; Kroencke, B.; Miller, J.; Robinette, P.; Schultz, D.;
+  Hinkle, J.; Pullum, L.; Schuman, C.; Renshaw, J.;  et~al.
+\newblock Automated detection of corrosion in used nuclear fuel dry storage
+  canisters using residual neural networks.
+\newblock {\em Nuclear Engineering and Technology} {\bf 2021}, {\em
+  53},~657--665.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.net.2020.07.020}}.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016}
+He, K.; Zhang, X.; Ren, S.; Sun, J.
+\newblock Deep Residual Learning for Image Recognition.
+\newblock In Proceedings of the 2016 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR),  2016, pp. 770--778.
+\newblock {\url{https://doi.org/10.1109/CVPR.2016.90}}.
+
+\bibitem[Zhang et~al.(2021)Zhang, Deng, Lu, Hong, Kong, Peng, and
+  Luo]{Zhang2021}
+Zhang, S.; Deng, X.; Lu, Y.; Hong, S.; Kong, Z.; Peng, Y.; Luo, Y.
+\newblock A channel attention based deep neural network for automatic metallic
+  corrosion detection.
+\newblock {\em Journal of Building Engineering} {\bf 2021}, {\em 42},~103046.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.jobe.2021.103046}}.
+
+\bibitem[Hu et~al.(2018)Hu, Shen, and Sun]{Hu2018}
+Hu, J.; Shen, L.; Sun, G.
+\newblock Squeeze-and-Excitation Networks.
+\newblock In Proceedings of the 2018 IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition,  2018, pp. 7132--7141.
+\newblock {\url{https://doi.org/10.1109/CVPR.2018.00745}}.
+
+\bibitem[Nash et~al.(2019)Nash, Drummond, and Birbilis]{Nash2019}
+Nash, W.; Drummond, T.; Birbilis, N.
+\newblock Deep learning AI for corrosion detection.
+\newblock In Proceedings of the Corrosion 2019. NACE International,  2019, NACE
+  - International Corrosion Conference Series.
+\newblock NACE International - Corrosion 2019 ; Conference date: 24-03-2019
+  Through 28-03-2019.
+
+\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{Long2015}
+Long, J.; Shelhamer, E.; Darrell, T.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In Proceedings of the 2015 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR), Los Alamitos, CA, USA,  jun 2015; pp. 3431--3440.
+\newblock {\url{https://doi.org/10.1109/CVPR.2015.7298965}}.
+
 \bibitem[Lin et~al.(2017)Lin, Dollár, Girshick, He, Hariharan, and
   Belongie]{Lin2017}
 Lin, T.Y.; Dollár, P.; Girshick, R.; He, K.; Hariharan, B.; Belongie, S.
@@ -89,13 +151,6 @@ Chaurasia, A.; Culurciello, E.
   Processing (VCIP),  2017, pp. 1--4.
 \newblock {\url{https://doi.org/10.1109/VCIP.2017.8305148}}.
 
-\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016}
-He, K.; Zhang, X.; Ren, S.; Sun, J.
-\newblock Deep Residual Learning for Image Recognition.
-\newblock In Proceedings of the 2016 IEEE Conference on Computer Vision and
-  Pattern Recognition (CVPR),  2016, pp. 770--778.
-\newblock {\url{https://doi.org/10.1109/CVPR.2016.90}}.
-
 \bibitem[Han et~al.(2017)Han, Zhang, and Qiao]{Han2017}
 Han, H.G.; Zhang, S.; Qiao, J.F.
 \newblock An adaptive growing and pruning algorithm for designing recurrent
@@ -128,13 +183,6 @@ Salehi, S.S.M.; Erdogmus, D.; Gholipour, A.
   Convolutional Deep Networks.
 \newblock In Proceedings of the Machine Learning in Medical Imaging; Wang, Q.;
   Shi, Y.; Suk, H.I.; Suzuki, K., Eds., Cham,  2017; pp. 379--387.
-
-\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{Long2015}
-Long, J.; Shelhamer, E.; Darrell, T.
-\newblock Fully convolutional networks for semantic segmentation.
-\newblock In Proceedings of the 2015 IEEE Conference on Computer Vision and
-  Pattern Recognition (CVPR), Los Alamitos, CA, USA,  jun 2015; pp. 3431--3440.
-\newblock {\url{https://doi.org/10.1109/CVPR.2015.7298965}}.
 
 \bibitem[Huang et~al.(2017)Huang, Liu, Van Der~Maaten, and
   Weinberger]{Huang2017}

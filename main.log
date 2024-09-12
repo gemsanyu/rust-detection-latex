@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.25)  12 SEP 2024 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.25)  12 SEP 2024 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1129,7 +1129,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
 \citation{*}
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 180.
+h' as default language. on input line 181.
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
@@ -1262,7 +1262,7 @@ Package cleveref Info: always capitalise cross-reference names on input line 78
 Package cleveref Info: no abbreviation of names on input line 7852.
 )
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 18
-0.
+1.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1270,24 +1270,24 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 180.
-LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -1304,19 +1304,19 @@ i
 \makeMPintoPDFobject=\count392
 \everyMPtoPDFconversion=\toks64
 )
-LaTeX Info: Redefining \microtypecontext on input line 180.
-Package microtype Info: Applying patch `item' on input line 180.
-Package microtype Info: Applying patch `toc' on input line 180.
-Package microtype Info: Applying patch `eqnum' on input line 180.
-Package microtype Info: Applying patch `footnote' on input line 180.
-Package microtype Info: Applying patch `verbatim' on input line 180.
+LaTeX Info: Redefining \microtypecontext on input line 181.
+Package microtype Info: Applying patch `item' on input line 181.
+Package microtype Info: Applying patch `toc' on input line 181.
+Package microtype Info: Applying patch `eqnum' on input line 181.
+Package microtype Info: Applying patch `footnote' on input line 181.
+Package microtype Info: Applying patch `verbatim' on input line 181.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 180.
+LaTeX Info: Redefining \showhyphens on input line 181.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1329,7 +1329,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 180.
+or `english'. on input line 181.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1368,92 +1368,92 @@ Package newfloat Info: `float' package detected.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 180.
+Package hyperref Info: Link coloring ON on input line 181.
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-80.
+81.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) Submitted to \T1/ppl/m/it/7 (+20) Math-e-mat-ics \T1/ppl/m/
 n/7 (+20) for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) pos-si-ble open ac-cess pub-li-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) un-der the terms and con-di-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) of the Cre-ative Com-mons Attri-
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 180--180
+Underfull \hbox (badness 8019) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) bu-tion (CC BY) li-cense ([][]https://[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-80.
+81.
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-180.
+181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-180.
+181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-180.
+181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 180.
+(Font)              scaled to size 10.42007pt on input line 181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 180.
+(Font)              scaled to size 7.91925pt on input line 181.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 180.
+(Font)              scaled to size 6.25204pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 180.
+(Font)              scaled to size 10.42007pt on input line 181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 180.
+(Font)              scaled to size 7.91925pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 180.
+(Font)              scaled to size 6.25204pt on input line 181.
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-180.
+181.
 
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1466,72 +1466,72 @@ Package microtype Info: Loading generic protrusion settings for font family
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 180.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 181.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 180.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 181.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 180.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 181.
 
 Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 18
-0.
-Package marginnote Info: right page because not two side mode on input line 180
+1.
+Package marginnote Info: right page because not two side mode on input line 181
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) Submitted to \T1/ppl/m/it/7 (+20) Math-e-mat-ics \T1/ppl/m/
 n/7 (+20) for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) pos-si-ble open ac-cess pub-li-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) un-der the terms and con-di-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) of the Cre-ative Com-mons Attri-
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 180--180
+Underfull \hbox (badness 8019) in paragraph at lines 181--181
 \T1/ppl/m/n/7 (+20) bu-tion (CC BY) li-cense ([][]https://[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
  []
 
-Package marginnote Info: xpos seems to be 167.01753pt on input line 180.
+Package marginnote Info: xpos seems to be 167.01753pt on input line 181.
 Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    date: 2024-08-28 20:08:39
 (epstopdf)                    size: 563678 bytes
@@ -1541,37 +1541,37 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    size: 13253 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Definitions/logo-mdp
 i-eps-converted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 180.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 <Definitions/logo-mdpi-eps-converted-to.pdf, id=53, 74.2775pt x 49.18375pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
-put line 180.
+put line 181.
 (pdftex.def)             Requested size: 42.96877pt x 28.45274pt.
 <Definitions/logo-orcid.pdf, id=55, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 180.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 181.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 180.
+(Font)              scaled to size 8.33606pt on input line 181.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 180.
+(Font)              scaled to size 5.21004pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 180.
+(Font)              scaled to size 8.33606pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 180.
+(Font)              scaled to size 5.21004pt on input line 181.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 180.
+(Font)              scaled to size 9.37807pt on input line 181.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 180.
+(Font)              scaled to size 7.29405pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 180.
+(Font)              scaled to size 9.37807pt on input line 181.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 180.
+(Font)              scaled to size 7.29405pt on input line 181.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-80.
+81.
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1585,6 +1585,8 @@ Package acronym Info: Label `acro:svm' newly defined as it shall be overridden
 although it is yet undefined on input line 210.
 Package acronym Info: Label `acro:cnn' newly defined as it shall be overridden
 although it is yet undefined on input line 211.
+Package acronym Info: Label `acro:dl' newly defined as it shall be overridden
+although it is yet undefined on input line 212.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1599,32 +1601,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 {C:/Users/USER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/USER/
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Definitions/logo-
 mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid.pdf>]
+Package acronym Info: Label `acro:fcn' newly defined as it shall be overridden
+although it is yet undefined on input line 235.
 Package acronym Info: Label `acro:fpn' newly defined as it shall be overridden
-although it is yet undefined on input line 236.
+although it is yet undefined on input line 247.
 Package acronym Info: Label `acro:manet' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 237.
+although it is yet undefined on input line 274.
 Package acronym Info: Label `acro:resnet101' newly defined as it shall be overr
 idden
-although it is yet undefined on input line 239.
+although it is yet undefined on input line 276.
 Package acronym Info: Label `acro:lp' newly defined as it shall be overridden
-although it is yet undefined on input line 242.
+although it is yet undefined on input line 279.
 Package acronym Info: Label `acro:agp' newly defined as it shall be overridden
-although it is yet undefined on input line 242.
+although it is yet undefined on input line 279.
 Package acronym Info: Label `acro:mp' newly defined as it shall be overridden
-although it is yet undefined on input line 243.
+although it is yet undefined on input line 280.
 Package acronym Info: Label `acro:iou' newly defined as it shall be overridden
-although it is yet undefined on input line 246.
+although it is yet undefined on input line 283.
 Package acronym Info: Label `acro:sscs' newly defined as it shall be overridden
 
-although it is yet undefined on input line 248.
+although it is yet undefined on input line 285.
 Package acronym Info: Label `acro:nea' newly defined as it shall be overridden
-although it is yet undefined on input line 249.
-Package acronym Info: Label `acro:fcn' newly defined as it shall be overridden
-although it is yet undefined on input line 274.
-Package acronym Info: Label `acro:relu' newly defined as it shall be overridden
-
-although it is yet undefined on input line 278.
+although it is yet undefined on input line 286.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1635,6 +1634,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [2]
+Package acronym Info: Label `acro:relu' newly defined as it shall be overridden
+
+although it is yet undefined on input line 315.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1653,18 +1656,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [4]
-<figures/ccsc-example.pdf, id=163, 399.08899pt x 232.4695pt>
+<figures/ccsc-example.pdf, id=177, 399.08899pt x 232.4695pt>
 File: figures/ccsc-example.pdf Graphic file (type pdf)
 <use figures/ccsc-example.pdf>
-Package pdftex.def Info: figures/ccsc-example.pdf  used on input line 494.
+Package pdftex.def Info: figures/ccsc-example.pdf  used on input line 531.
 (pdftex.def)             Requested size: 197.17761pt x 114.85814pt.
-<figures/nea-example.pdf, id=166, 399.08899pt x 169.61267pt>
+<figures/nea-example.pdf, id=180, 399.08899pt x 169.61267pt>
 File: figures/nea-example.pdf Graphic file (type pdf)
 <use figures/nea-example.pdf>
-Package pdftex.def Info: figures/nea-example.pdf  used on input line 518.
+Package pdftex.def Info: figures/nea-example.pdf  used on input line 555.
 (pdftex.def)             Requested size: 197.17761pt x 83.80194pt.
 Package acronym Info: Label `acro:sgd' newly defined as it shall be overridden
-although it is yet undefined on input line 531.
+although it is yet undefined on input line 568.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1674,60 +1677,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[5 <./figures/ccsc-example.pdf> <./figures/nea-example.pdf>]
-<figures/iou_training_progress.pdf, id=244, 530.0075pt x 281.13531pt>
+[5 <./figures/ccsc-example.pdf>]
+<figures/iou_training_progress.pdf, id=226, 530.0075pt x 281.13531pt>
 File: figures/iou_training_progress.pdf Graphic file (type pdf)
 <use figures/iou_training_progress.pdf>
 Package pdftex.def Info: figures/iou_training_progress.pdf  used on input line 
-585.
+622.
 (pdftex.def)             Requested size: 354.91728pt x 188.261pt.
-<figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf, id=248, 395.90533pt 
+<figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf, id=230, 395.90533pt 
 x 312.02145pt>
 File: figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf Graphic file (ty
 pe pdf)
 <use figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/unet_linear_0.5_NEAtraining_progress.p
-df  used on input line 609.
+df  used on input line 646.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf, id=249, 395.90533pt x 3
+<figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf, id=231, 395.90533pt x 3
 12.02145pt>
 File: figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf Graphic file (type 
 pdf)
 <use figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf 
- used on input line 616.
+ used on input line 653.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf, id=250, 395.90533p
+<figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf, id=232, 395.90533p
 t x 312.02145pt>
 File: figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf Graphic file (
 type pdf)
 <use figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/unet_movement_0.5_NEAtraining_progress
-.pdf  used on input line 623.
+.pdf  used on input line 660.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf, id=251, 395.90533pt 
+<figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf, id=233, 395.90533pt 
 x 312.02145pt>
 File: figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf Graphic file (ty
 pe pdf)
 <use figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/fpn_linear_0.5_CCSCtraining_progress.p
-df  used on input line 630.
+df  used on input line 667.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf, id=252, 395.90533pt x 3
+<figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf, id=234, 395.90533pt x 3
 12.02145pt>
 File: figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf Graphic file (type 
 pdf)
 <use figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf 
- used on input line 637.
+ used on input line 674.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
-<figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf, id=253, 395.90533p
+<figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf, id=235, 395.90533p
 t x 312.02145pt>
 File: figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf Graphic file (
 type pdf)
 <use figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf>
 Package pdftex.def Info: figures/pruning/fpn_movement_0.5_CCSCtraining_progress
-.pdf  used on input line 644.
+.pdf  used on input line 681.
 (pdftex.def)             Requested size: 108.642pt x 85.62285pt.
 
 
@@ -1738,52 +1741,52 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[6 <./figures/iou_training_progress.pdf>]
-<figures/test/pruning-testing-score_NEA_agp.pdf, id=298, 337.59875pt x 434.4468
+[6 <./figures/nea-example.pdf>]
+<figures/test/pruning-testing-score_NEA_agp.pdf, id=278, 337.59875pt x 434.4468
 5pt>
 File: figures/test/pruning-testing-score_NEA_agp.pdf Graphic file (type pdf)
 <use figures/test/pruning-testing-score_NEA_agp.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_agp.pdf  used o
-n input line 693.
+n input line 730.
 (pdftex.def)             Requested size: 109.39656pt x 140.77591pt.
-<figures/test/pruning-testing-score_NEA_linear.pdf, id=299, 323.87561pt x 434.4
+<figures/test/pruning-testing-score_NEA_linear.pdf, id=279, 323.87561pt x 434.4
 4685pt>
 File: figures/test/pruning-testing-score_NEA_linear.pdf Graphic file (type pdf)
 
 <use figures/test/pruning-testing-score_NEA_linear.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_linear.pdf  use
-d on input line 700.
+d on input line 737.
 (pdftex.def)             Requested size: 104.89769pt x 140.70963pt.
-<figures/test/pruning-testing-score_NEA_movement.pdf, id=300, 317.49239pt x 434
+<figures/test/pruning-testing-score_NEA_movement.pdf, id=280, 317.49239pt x 434
 .44685pt>
 File: figures/test/pruning-testing-score_NEA_movement.pdf Graphic file (type pd
 f)
 <use figures/test/pruning-testing-score_NEA_movement.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_NEA_movement.pdf  u
-sed on input line 707.
+sed on input line 744.
 (pdftex.def)             Requested size: 103.39996pt x 141.49185pt.
-<figures/test/pruning-testing-score_CCSC_agp.pdf, id=301, 343.98198pt x 434.446
+<figures/test/pruning-testing-score_CCSC_agp.pdf, id=281, 343.98198pt x 434.446
 85pt>
 File: figures/test/pruning-testing-score_CCSC_agp.pdf Graphic file (type pdf)
 <use figures/test/pruning-testing-score_CCSC_agp.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_CCSC_agp.pdf  used 
-on input line 719.
+on input line 756.
 (pdftex.def)             Requested size: 110.14543pt x 139.112pt.
-<figures/test/pruning-testing-score_CCSC_linear.pdf, id=302, 330.25883pt x 434.
+<figures/test/pruning-testing-score_CCSC_linear.pdf, id=282, 330.25883pt x 434.
 44685pt>
 File: figures/test/pruning-testing-score_CCSC_linear.pdf Graphic file (type pdf
 )
 <use figures/test/pruning-testing-score_CCSC_linear.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_CCSC_linear.pdf  us
-ed on input line 726.
+ed on input line 763.
 (pdftex.def)             Requested size: 106.3954pt x 139.9539pt.
-<figures/test/pruning-testing-score_CCSC_movement.pdf, id=303, 317.49239pt x 43
+<figures/test/pruning-testing-score_CCSC_movement.pdf, id=283, 317.49239pt x 43
 4.44685pt>
 File: figures/test/pruning-testing-score_CCSC_movement.pdf Graphic file (type p
 df)
 <use figures/test/pruning-testing-score_CCSC_movement.pdf>
 Package pdftex.def Info: figures/test/pruning-testing-score_CCSC_movement.pdf  
-used on input line 733.
+used on input line 770.
 (pdftex.def)             Requested size: 102.6511pt x 140.46434pt.
 
 
@@ -1794,100 +1797,99 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[7 <./figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf> <./figures/prun
-ing/unet_agp_0.5_NEAtraining_progress.pdf> <./figures/pruning/unet_movement_0.5
-_NEAtraining_progress.pdf> <./figures/pruning/fpn_linear_0.5_CCSCtraining_progr
-ess.pdf> <./figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf> <./figures/p
-runing/fpn_movement_0.5_CCSCtraining_progress.pdf> <./figures/test/pruning-test
-ing-score_NEA_agp.pdf> <./figures/test/pruning-testing-score_NEA_linear.pdf> <.
-/figures/test/pruning-testing-score_NEA_movement.pdf>]
-<figures/pruning-results/NEA/11.jpg, id=555, 372.9132pt x 220.4235pt>
+[7 <./figures/iou_training_progress.pdf> <./figures/pruning/unet_linear_0.5_NEA
+training_progress.pdf> <./figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf
+> <./figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf> <./figures/pru
+ning/fpn_linear_0.5_CCSCtraining_progress.pdf> <./figures/pruning/fpn_agp_0.5_C
+CSCtraining_progress.pdf> <./figures/pruning/fpn_movement_0.5_CCSCtraining_prog
+ress.pdf>]
+<figures/pruning-results/NEA/11.jpg, id=493, 372.9132pt x 220.4235pt>
 File: figures/pruning-results/NEA/11.jpg Graphic file (type jpg)
 <use figures/pruning-results/NEA/11.jpg>
 Package pdftex.def Info: figures/pruning-results/NEA/11.jpg  used on input line
- 792.
+ 829.
 (pdftex.def)             Requested size: 149.8522pt x 88.5748pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg, id=556, 372.9132pt x 220.42
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg, id=494, 372.9132pt x 220.42
 35pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg Graphic file (type jpg)
 
 <use figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg  use
-d on input line 799.
+d on input line 836.
 (pdftex.def)             Requested size: 149.8522pt x 88.5748pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg, id=557, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg, id=495, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg Graphic file (type jp
 g)
 <use figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.2.jpg  u
-sed on input line 806.
+sed on input line 843.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg, id=558, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg, id=496, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg Graphic file (type jp
 g)
 <use figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.5.jpg  u
-sed on input line 812.
+sed on input line 849.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg, id=559, 372.9132pt x 220.
+<figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg, id=497, 372.9132pt x 220.
 4235pt>
 File: figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg Graphic file (type jp
 g)
 <use figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_agp/10/mask_0.9.jpg  u
-sed on input line 818.
+sed on input line 855.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg, id=560, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg, id=498, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg Graphic file (type
  jpg)
 <use figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.2.jpg
-  used on input line 825.
+  used on input line 862.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg, id=561, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg, id=499, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg Graphic file (type
  jpg)
 <use figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg
-  used on input line 831.
+  used on input line 868.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg, id=562, 372.9132pt x 2
+<figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg, id=500, 372.9132pt x 2
 20.4235pt>
 File: figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg Graphic file (type
  jpg)
 <use figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_linear/10/mask_0.9.jpg
-  used on input line 837.
+  used on input line 874.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg, id=563, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg, id=501, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg Graphic file (ty
 pe jpg)
 <use figures/pruning-results/fpn_NEA_movement/10/mask_0.2.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.2.j
-pg  used on input line 844.
+pg  used on input line 881.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg, id=564, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg, id=502, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg Graphic file (ty
 pe jpg)
 <use figures/pruning-results/fpn_NEA_movement/10/mask_0.5.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.5.j
-pg  used on input line 850.
+pg  used on input line 887.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
-<figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg, id=565, 372.9132pt x
+<figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg, id=503, 372.9132pt x
  220.4235pt>
 File: figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg Graphic file (ty
 pe jpg)
 <use figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg>
 Package pdftex.def Info: figures/pruning-results/fpn_NEA_movement/10/mask_0.9.j
-pg  used on input line 856.
+pg  used on input line 893.
 (pdftex.def)             Requested size: 108.642pt x 64.21715pt.
- (main.bbl
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1896,9 +1898,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[8 <./figures/test/pruning-testing-score_CCSC_agp.pdf> <./figures/test/pruning-
-testing-score_CCSC_linear.pdf> <./figures/test/pruning-testing-score_CCSC_movem
-ent.pdf>]
+[8 <./figures/test/pruning-testing-score_NEA_agp.pdf> <./figures/test/pruning-t
+esting-score_NEA_linear.pdf> <./figures/test/pruning-testing-score_NEA_movement
+.pdf> <./figures/test/pruning-testing-score_CCSC_agp.pdf> <./figures/test/pruni
+ng-testing-score_CCSC_linear.pdf> <./figures/test/pruning-testing-score_CCSC_mo
+vement.pdf>] (main.bbl
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1914,7 +1918,7 @@ n_NEA_agp/10/mask_0.9.jpg> <./figures/pruning-results/fpn_NEA_linear/10/mask_0.
 2.jpg> <./figures/pruning-results/fpn_NEA_linear/10/mask_0.5.jpg> <./figures/pr
 uning-results/fpn_NEA_linear/10/mask_0.9.jpg> <./figures/pruning-results/fpn_NE
 A_movement/10/mask_0.2.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask
-_0.5.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg>])
+_0.5.jpg> <./figures/pruning-results/fpn_NEA_movement/10/mask_0.9.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1923,7 +1927,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[10] 
+[10])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[11] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (main.aux)
  ***********
@@ -1934,13 +1947,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 08E2337A9840580A45F588F573891281;1187.
  ) 
 Here is how much of TeX's memory you used:
- 34976 strings out of 474486
- 664745 string characters out of 5744227
- 1956542 words of memory out of 5000000
- 56089 multiletter control sequences out of 15000+600000
- 645076 words of font info for 471 fonts, out of 8000000 for 9000
+ 35032 strings out of 474486
+ 665432 string characters out of 5744227
+ 1964542 words of memory out of 5000000
+ 56114 multiletter control sequences out of 15000+600000
+ 646202 words of font info for 487 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,13n,124p,4704b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,13n,124p,4704b,758s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\USER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0
 800.pk><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1954,9 +1967,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/USER/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/USER
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/US
 ER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (10 pages, 2533710 bytes).
+Output written on main.pdf (11 pages, 2542440 bytes).
 PDF statistics:
- 761 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 788 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  109801 words of extra memory for PDF output out of 128383 (max. 10000000)
 

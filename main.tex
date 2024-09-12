@@ -12,6 +12,7 @@
 \begin{acronym}[SSCS]
     \acro{agp}[AGP]{automated gradual pruning}
     \acro{cnn}[CNN]{convolutional neural network}
+    \acro{dl}[DL]{deep learning}
     \acro{fcn}[FCN]{fully convolutional network}
     \acro{fpn}[FPN]{feature pyramid network}
     \acro{iou}[IoU]{intersection over union}
@@ -182,9 +183,8 @@ $5\%$ IoU reduction on NEA dataset.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Metal corrosion is an ever-present problem in maintaiing 
-infrastructures globally. If left undetected
-and unattended, corrosion can cause serious damage to the infrastructures
+Metal corrosion is an ever-present problem in infrastructure maintenance around the world. If left undetected
+and unattended, corrosion can cause serious damage to the infrastructure
 resulting in premature end-of-life of the infrastructures,
 direct and indirect financial loss, 
 and ultimately poses critical safety risks. It 
@@ -192,52 +192,89 @@ is no wonder that the global cost estimates of
 corrosion is \$25 trillion~\cite{Koch2016}.
 Therefore, it is imperative to
 inspect infrastructures for metallic corrosion
-regularly. Corrosion detection and maintance
+regularly. Corrosion detection and maintenance
 are vital to prevent metallic corrosion~\cite{Wang2019}.
 
 Commonly, corrosion detection is conducted 
-visually by experts on the field. The inspection is 
+visually by experts in the field. The inspection is 
 also conducted on images collected by \ac{uav}, especially
 on hard-to-reach parts of the structure.
 Afterward, the collected images are analyzed to detect
-the corrosion. Nowadays, various computer-based
+corrosion. Nowadays, various computer-based
 methods have been proposed to detect corrosion
 from these images. The methods range from
-tradional image processing techniques,
-e.g., color space based detection~\cite{Igoe2016} 
+traditional image processing techniques,
+e.g., color space-based detection~\cite{Igoe2016} 
 and texture analysis-based detection~\cite{Pascual2014},
 to machine learning-based methods, e.g.,
 \ac{svm}~\cite{Chen2012} and various 
 \ac{cnn}-based models~\cite{Nash2022, Liu2023}.
-Deep learning-based methods have been gaining more
+\ac{dl}-based methods have been gaining more
 popular due to its faster process while achieving
 even pixel-level accuracy. 
 
-Despite its qualities, one also need to consider
+Various \ac{dl}-based methods have been proposed
+to aid structural visual inspection, including metal
+corrosion detection. Petricca et al.~\cite{Petricca2016}
+trained an AlexNet to classify whether
+an image contains rust or not, which performs
+better than a traditional color-based image segmentation
+techniques. Atha and Jahanshahi~\cite{Atha2018}
+trained a VGG network to classify whether patches
+of images contain corroded areas. Similarly,
+Papamarkou et al.~\cite{Papamarkou2021}
+trained ResNets~\cite{He2016} to detect corrosion
+on tiled images of nuclear fuel canisters' surfaces
+with acceptable performance. Zhang et al.~\cite{Zhang2021}
+trained an SE-ResNet~\cite{Hu2018} for
+rust image segmentation task on an original metal
+corrosion image dataset collected by conducting 
+salt-spray atmospheric accelerated corrosion test.
+Nash et al.~\cite{Nash2019}
+studies the impact of dataset label quality 
+and size for training an \ac{fcn}~\cite{Long2015}
+for semantic segmentation of metal corrosion. 
+They found that a large noisy dataset (250 images)
+is better than a very small expertly labelled 
+dataset (10 images). Afterward, 
+Nash et al.~\cite{Nash2022} incorporate
+Bayesian methods into \ac{fcn}
+to quantify the uncertainty estimates 
+of the predicted class so that the decision-makers
+can be more informed about the model's confidence and 
+to improve risk management. Liu et al.~\cite{Liu2023}
+proposed a dual (spatial and channel) attention module,
+and incorporated it into ResNet and \ac{fpn} for 
+metal corrosion segmentation task. They showed that
+the proposed dual attention module can improve the performance
+of the models on both datasets of metal corrosion
+images in the natural and laboratory environment. 
+
+Despite its qualities, one also needs to consider
 the required computational resources, including
-financial cost, networking and accessability,
-in deploying deep-learning based solutions.
+the financial cost, networking, and accessibility,
+in deploying \ac{dl}-based solutions.
 This is even more important when one wants to 
-deploy deep learning-based solutions in remote
+deploy \ac{dl}-based solutions in remote
 areas where only edge devices can be afforded.
 Therefore, to reduce computational resource requirements
 of these methods, lightweight 
 models can be a solution for these limitations.
 
 In this study, we propose to produce lightweight
-models for multiclass image segmentation
-task for pixel level metal corrosion detection.
+models for the multiclass image segmentation
+task for pixel-level metal corrosion detection.
 We make the models lightweight by pruning the neural 
 network's weights. We propose to prepare the lightweight models
-by training the models, pruning their weights, followed
+by training the models, and pruning their weights, followed
 by fine-tuning the pruned models. 
 In this study,
 we experimentally evaluate five neural network
 architectures, i.e., \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
 U-NET++~\cite{Zhou2018}, \ac{manet}~\cite{Fan2020}, and 
 LinkNet~\cite{Chaurasia2017}. For each of these architectures,
-we employ \ac{resnet101}~\cite{He2016} pretrained on ImageNet
-dataset as the feature extractor. Thre pruning strategies
+we employ \ac{resnet101}~\cite{He2016} pre-trained on ImageNet
+dataset as the feature extractor. Three pruning strategies
 are considered in the pruning stage, namely
 \ac{lp}, \ac{agp} algorithm~\cite{Han2017},
 and \ac{mp} algorithm~\cite{Sanh2020}. We prune
