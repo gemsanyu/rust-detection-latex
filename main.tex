@@ -286,26 +286,6 @@ i.e., the \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and
 the \ac{nea} dataset \cite{Liu2023}. 
 
 \section{Background}
-This section describes the considered architectures,
-the pruning algorithms, the loss function
-to train the model and the evaluation metric.
-Throughout all stages, the models are trained to minimize
-the Tversky loss function~\cite{Salehi2017} as given
-by:
-\begin{equation}
-    L(\hat{\alpha}, \hat{\beta}) = \frac{\text{TP}}{\text{TP}+
-    \hat{\alpha}\text{FP} +  \hat{\beta}\text{FN}},
-\end{equation}
-where TP denotes the true positives, FP the false positives
-and FN the false negatives. The two hyperparameters of 
-the loss function are $\hat{\alpha}$ and $\hat{\beta}$
-that adjust the trade-off between false positives and
-false negatives. The metric used to evalute the performance of the trained
-models is the \ac{iou}, which is given by:
-\begin{equation}
-    IoU = \frac{\text{TP}}{\text{TP}+\text{FP}+\text{FN}}.
-\end{equation}
-
 \subsection{Architecture}
 U-NET~\cite{Ronneberger2015} is an extension to
  \ac{fcn}~\cite{Long2015} where the architecture
@@ -508,7 +488,47 @@ is the same as \ac{agp}, i.e., as given by \eqref{eq:methods:pruning:agp}.
 \section{Proposed Method}
 This section describes the proposed framework
 to train lightweight semantic segmentation models
-for rust detection. 
+for rust detection, the datasets and the experimental settings.
+The conducted experimental study is depicted in Figure~\ref{fig:flowchart-study}.
+As previously mentioned, in this study we consider five
+architectures, namely \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
+U-NET++~\cite{Zhou2018}, \ac{manet}~\cite{Fan2020}, and 
+LinkNet~\cite{Chaurasia2017}. First, we train the models
+on each dataset. Afterward, the trained models are pruned
+using the three considered pruning algorithms, 
+i.e., \ac{lp}, \ac{agp} algorithm~\cite{Han2017},
+and \ac{mp} algorithm~\cite{Sanh2020}. Therefore,
+at the end of the pruning stage, we obtained 15 pruned models.
+Each pruned model is then further fine-tuned to try to recover
+the loss in performance due to the pruning process. Afterward,
+we evaluate the models performance on each dataset to find
+the best performing model and pruning algorithm on each dataset. 
+
+\begin{figure}[htbp]
+  \begin{center}
+  \includegraphics[width=0.8\textwidth]{figures/flowchart-study.pdf}
+  \caption{Experimental study flowchart}
+  \label{fig:flowchart-study}
+  \end{center}
+\end{figure}
+
+Throughout all stages, the models are trained to minimize
+the Tversky loss function~\cite{Salehi2017} as given
+by:
+\begin{equation}
+    L(\hat{\alpha}, \hat{\beta}) = \frac{\text{TP}}{\text{TP}+
+    \hat{\alpha}\text{FP} +  \hat{\beta}\text{FN}},
+\end{equation}
+where TP denotes the true positives, FP the false positives
+and FN the false negatives. The two hyperparameters of 
+the loss function are $\hat{\alpha}$ and $\hat{\beta}$
+that adjust the trade-off between false positives and
+false negatives. The metric used to evalute the performance of the trained
+models is the \ac{iou}, which is given by:
+\begin{equation}
+    IoU = \frac{\text{TP}}{\text{TP}+\text{FP}+\text{FN}}.
+\end{equation}
+
 
 \subsection{Datasets}
 In this study, the models are trained and evaluated on two metal corrosion image
@@ -528,7 +548,7 @@ in the original paper \cite{Bianchi2022Journal}.
 
 \begin{figure}[htbp]
     \begin{center}
-    \includegraphics[width=0.5\textwidth]{figures/ccsc-example.pdf}
+    \includegraphics[width=0.7\textwidth]{figures/ccsc-example.pdf}
     \caption{An example of \ac{sscs} image and its corresponding label mask}
     \label{fig:dataset:ccsc-example}
     \end{center}
@@ -552,10 +572,48 @@ segmentation task.
 
 \begin{figure}[htbp]
     \begin{center}
-    \includegraphics[width=0.5\textwidth]{figures/nea-example.pdf}
+    \includegraphics[width=0.7\textwidth]{figures/nea-example.pdf}
     \caption{An example of \ac{nea} image and its corresponding label mask}
     \label{fig:dataset:nea-example}
     \end{center}
+\end{figure}
+
+We can further describe the datasets by looking at their label
+distribution represented by the total number of pixels for each 
+class. The label distributions for \ac{sscs} and \ac{nea}
+dataset are depicted in Figure~\ref{fig:label-distribution:ccsc}
+and Figure~\ref{fig:label-distribution:nea}, respectively.
+We can argue that a class imbalance occurs in both datasets
+even between only the corrosion-related labels. In \ac{sscs}
+dataset, only $1.4\%$ of the total pixels are of the severe
+corrosion label, while the fair corrosion label occupies
+most pixels ($12.4\%$), followed by poor corrosion ($7.2\%$).
+In \ac{nea} dataset, the severe corrosion label occupies
+five times more pixels than the poor label. As a side remark,
+one can argue that the label "good" is a misnomer. The 
+label "good" can not refer to a metallic surface in good 
+condition because the background pixels are also labeled as good.
+Therefore, one may also try to split the label "good" into
+the background and actual metallic surface with good conditions
+and study the impact of splitting the label on the performance
+of the trained models. However, we left this attempt for future studies.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}[t]{.48\textwidth}
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/CCSCclass_distribution.pdf}
+    \caption{\ac{sscs} dataset}
+    \label{fig:label-distribution:ccsc}
+  \end{subfigure}
+  \begin{subfigure}[t]{.49\textwidth}
+    \centering
+    \includegraphics[width=.95\linewidth]{figures/NEAclass_distribution.pdf}
+    \caption{\ac{nea} dataset}
+    \label{fig:label-distribution:nea}
+  \end{subfigure}
+  \caption{Label distribution}
+  \label{fig:label-distribution}
 \end{figure}
 
 
@@ -796,7 +854,8 @@ of the predicted labels generated by the pruned
 models. Other visualizations are provided in the GitHub repository.
 Figure~\ref{fig:results:pruning:visualization:nea} 
 shows the labels generated by \ac{fpn} 
-with varying sparsity with the three pruning methods. 
+with varying sparsity with the three pruning methods
+on \ac{nea} dataset. 
 The displayed figures
 can represent the difference in testing \ac{iou}
 previously described. As can be observed, 
@@ -807,12 +866,12 @@ which is resembled by the testing \ac{iou}
 that is retained up to $\zeta_f=0.5$. 
 On the other hand, the model pruned with \ac{mp}
 with $\zeta_f=0.5$ generates significantly different
-label mask, where some poor labels are missing and
+label masks, where some poor labels are missing and
 some severe areas are misclassified as poor areas.
 For models pruned up to $\zeta_f=0.9$, where 
 the testing \ac{iou} deteriorates significantly, 
-we can observed that all models can only classify
-the pixels into only one class. \ac{agp} and \ac{mp}
+we can observe that all models can only classify
+the pixels into one class. \ac{agp} and \ac{mp}
 classified all corroded areas into severe areas,
 while \ac{lp} classified all into poor areas. Most
 corroded areas are severe areas, therefore 
@@ -821,6 +880,34 @@ have more pixels correctly labeled, compared to the model
 pruned by \ac{lp}. This explains 
 why \ac{lp} has the worst testing \ac{iou} on
 $\zeta_f=0.9$ compared to \ac{agp} and \ac{mp}.
+
+Figure~\ref{fig:results:pruning:visualization:ccsc}
+shows the label generated by LinkNet on \ac{sscs} dataset. As shown by the figures,
+the labels generated by LinkNet pruned by \ac{agp}
+and \ac{lp} up to $\zeta_f=0.5$ are still quite similar to the
+labels generated by the un-pruned model. Similar to 
+Figure~\ref{fig:results:pruning:visualization:nea},
+for $\zeta_f=0.9$, the models pruned by \ac{agp} and
+\ac{lp} can only predict two labels. This observation
+can explain the change in \ac{iou} obtained by \ac{agp}
+and \ac{lp} as $\zeta_f$ increases. However,
+the model pruned by \ac{mp} fails miserably, even
+for $\zeta_f=0.2$. Starting from $\zeta_f=0.2$ the generated labels
+still show a little resemblance to the original labels, but we
+can notice how the background is being mislabeled more
+and strange Moir\'{e} pattern appears. For $\zeta_f=0.5$, the
+labels are already random and all over the place. Finally,
+for $\zeta_f=0.9$, the model fails to predict any corrosion 
+label. Interestingly, this observation can explain the
+\ac{iou} obtained by \ac{mp}. The labels are all over the place
+when $\zeta_f=0.5$, therefore the \ac{iou} is lowest. On the other hand,
+despite failing to predict any corrosion label at $\zeta_f=0.9$, its \ac{iou}
+is higher than $\zeta_f=0.2$ and $\zeta_f=0.5$. This is because the
+good label, i.e., background and metallic surface with good
+condition, has significantly more pixel numbers than
+corrosion-related labels, as shown in Figure~\ref{fig:label-distribution:ccsc}. 
+Therefore, simply labeling all pixels as good can result in higher \ac{iou} on average
+compared to wrongly mislabelling the corrosion state.  
 
 \begin{figure}[!ht]
     \centering
@@ -834,7 +921,7 @@ $\zeta_f=0.9$ compared to \ac{agp} and \ac{mp}.
       \begin{subfigure}[t]{.4\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning-results/fpn_NEA_agp/10/mask_0.jpg}
-        \caption{Label mask generated by \ac{fpn}}
+        \caption{Label mask generated by LinkNet}
         \label{fig:results:pruning:visualization:nea-fpn}
       \end{subfigure}
       \vskip\baselineskip
@@ -898,6 +985,82 @@ $\zeta_f=0.9$ compared to \ac{agp} and \ac{mp}.
       \label{fig:results:pruning:visualization:nea}
   \end{figure}
 
+\begin{figure}[!ht]
+  \centering
+    \begin{subfigure}[t]{.4\textwidth}
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/CCSC/0.jpg}
+      \caption{Example image}
+      \label{fig:results:pruning:visualization:ccsc-linknet-x}
+    \end{subfigure}
+  %   \hfill
+    \begin{subfigure}[t]{.4\textwidth}
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_agp/0/mask_0.jpg}
+      \caption{Label mask generated by \ac{fpn}}
+      \label{fig:results:pruning:visualization:ccsc-linknet}
+    \end{subfigure}
+    \vskip\baselineskip
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_agp/0/mask_0.2.jpg}
+      \caption{\ac{agp}, $\zeta_f=0.2$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-agp-0.2}
+    \end{subfigure} 
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_agp/0/mask_0.5.jpg}
+      \caption{\ac{agp}, $\zeta_f=0.5$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-agp-0.5}
+    \end{subfigure}
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_agp/0/mask_0.9.jpg}
+      \caption{\ac{agp}, $\zeta_f=0.9$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-agp-0.9}
+    \end{subfigure}
+    \vskip\baselineskip
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_linear/0/mask_0.2.jpg}
+      \caption{\ac{lp}, $\zeta_f=0.2$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-lp-0.2}
+    \end{subfigure}
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_linear/0/mask_0.5.jpg}
+      \caption{\ac{lp}, $\zeta_f=0.5$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-lp-0.5}
+    \end{subfigure}
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_linear/0/mask_0.9.jpg}
+      \caption{\ac{lp}, $\zeta_f=0.9$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-lp-0.9}
+    \end{subfigure}
+    \vskip\baselineskip
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_movement/0/mask_0.2.jpg}
+      \caption{\ac{mp}, $\zeta_f=0.2$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-mp-0.2}
+    \end{subfigure}
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_movement/0/mask_0.5.jpg}
+      \caption{\ac{mp}, $\zeta_f=0.5$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-mp-0.5}
+    \end{subfigure}
+    \begin{subfigure}[t]{.29\textwidth} 
+      \centering
+      \includegraphics[width=.95\linewidth]{figures/pruning-results/linknet_CCSC_movement/0/mask_0.9.jpg}
+      \caption{\ac{mp}, $\zeta_f=0.9$}
+      \label{fig:results:pruning:visualization:ccsc-linknet-mp-0.9}
+    \end{subfigure}
+    \caption{Example of image and the label mask generated by LinkNet on SSCS dataset}
+    \label{fig:results:pruning:visualization:ccsc}
+\end{figure}
+
 % \begin{figure}[htbp]
 %     \begin{center}
 %     \includegraphics[width=0.9\textwidth]{figures/f1_training_progress.pdf}
@@ -907,20 +1070,39 @@ $\zeta_f=0.9$ compared to \ac{agp} and \ac{mp}.
 % \end{figure}
 These results indicate that we can produce lightweight
 metal corrosion segmentation models by the training, 
-pruning and fine-tuning framework as is done in this study.
+pruning, and fine-tuning framework as is done in this study.
 We have shown that the models, especially \ac{fpn},
 and LinkNet, can be pruned with \ac{agp}
 and \ac{lp} up to $\zeta_f=0.5$ without
-significant reduction in performance. Further study
-is needed to improve the performance of the models
+significant reduction in performance. 
+Further study is needed to improve the performance of the models
 if we aim to prune the models up to $\zeta_f=0.9$. 
+On the other hand, we have
+significant performance reduction 
+by pruning the model, e.g., pruning LinkNet by \ac{mp}
+on \ac{sscs} dataset. This indicates that not all
+architecture is directly suitable to be pruned by \ac{mp}.
+Further study is needed to find the component of the
+architecture that is too sensitive to be pruned
+and the component suitable to be pruned. 
 
-In addition to a more comprehensive experimental study,
-the model performance, as well as the quality of future
-studies, can be greatly improved by expanding and improving
-the quality of the metal corrosion image dataset.
-Despite the importance of metal corrosion image dataset
-
+In addition,
+the results of LinkNet pruning on \ac{sscs}
+also shows one of the effects of the class imbalance in
+the dataset. Due to the significant difference in the pixel
+number between good and corrosion-related labels, 
+a model can achieve a higher \ac{iou} on average by not 
+predicting at all rather than slight mislabelling. Therefore,
+further study must incorporate methods to address the class imbalance,
+e.g., using weighted loss functions or re-sampling techniques.
+One other approach to address the class imbalance is by improving
+the dataset quality. As discussed previously, we can separate
+the label for the background and the actual metallic surface with
+good condition, and improve the consistency in the labeling. 
+Such an attempt to extend and improve the dataset quality is 
+both relevant and necessary, given the scarcity
+of visual structural inspection datasets, including
+those for metal corrosion inspection~\cite{Bianchi2022}. 
 
 \section{Conclusions}
 In this study, we have trained and evaluated five 
@@ -935,15 +1117,19 @@ little reduction in performance compared to
 the original trained model. However,
 the performance of the model deteriorates significantly
 when pruned up to $\zeta_f=0.9$ with all three pruning
-algorithms. This suggests that further analysis
+algorithms. Significant performance reduction is also
+observed when using \ac{mp} with several architectures,
+e.g., LinkNet, on \ac{sscs} dataset.
+This suggests that further analysis
 and study are needed to improve the performance
 of the models if we aim to prune the model up to $\zeta_f=0.9$.
-This future study can include hyperparamater tuning
-for the fine-tuning stage, more granular choice
-of $\zeta_f$ to fine the sweet spot of sparsity
-and performance, and evaluating other pruning algorithms.
+This future study can include hyperparameter tuning
+for the fine-tuning stage, a more granular choice
+of $\zeta_f$ to find the sweet spot of sparsity
+and performance, evaluating other pruning algorithms,
+and addressing the class imbalance in the datasets.
 In addition, further study can also aim to expand
-the very limited dataset on 
+and improve the quality of the limited dataset on 
 metal corrosion image segmentation.
 
 \reftitle{References}

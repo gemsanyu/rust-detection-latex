@@ -177,13 +177,6 @@ Bianchi, E.; Hebdon, M.
   36},~04022039.
 \newblock {\url{https://doi.org/10.1061/(ASCE)CP.1943-5487.0001045}}.
 
-\bibitem[Salehi et~al.(2017)Salehi, Erdogmus, and Gholipour]{Salehi2017}
-Salehi, S.S.M.; Erdogmus, D.; Gholipour, A.
-\newblock Tversky Loss Function for Image Segmentation Using 3D Fully
-  Convolutional Deep Networks.
-\newblock In Proceedings of the Machine Learning in Medical Imaging; Wang, Q.;
-  Shi, Y.; Suk, H.I.; Suzuki, K., Eds., Cham,  2017; pp. 379--387.
-
 \bibitem[Huang et~al.(2017)Huang, Liu, Van Der~Maaten, and
   Weinberger]{Huang2017}
 Huang, G.; Liu, Z.; Van Der~Maaten, L.; Weinberger, K.Q.
@@ -208,11 +201,24 @@ Molchanov, P.; Mallya, A.; Tyree, S.; Frosio, I.; Kautz, J.
   Pattern Recognition (CVPR),  2019, pp. 11256--11264.
 \newblock {\url{https://doi.org/10.1109/CVPR.2019.01152}}.
 
+\bibitem[Salehi et~al.(2017)Salehi, Erdogmus, and Gholipour]{Salehi2017}
+Salehi, S.S.M.; Erdogmus, D.; Gholipour, A.
+\newblock Tversky Loss Function for Image Segmentation Using 3D Fully
+  Convolutional Deep Networks.
+\newblock In Proceedings of the Machine Learning in Medical Imaging; Wang, Q.;
+  Shi, Y.; Suk, H.I.; Suzuki, K., Eds., Cham,  2017; pp. 379--387.
+
 \bibitem[Smith(2017)]{Smith2017}
 Smith, L.N.
 \newblock Cyclical Learning Rates for Training Neural Networks.
 \newblock In Proceedings of the 2017 IEEE Winter Conference on Applications of
   Computer Vision (WACV),  2017, pp. 464--472.
 \newblock {\url{https://doi.org/10.1109/WACV.2017.58}}.
+
+\bibitem[Bianchi and Hebdon(2022)]{Bianchi2022}
+Bianchi, E.; Hebdon, M.
+\newblock Visual structural inspection datasets.
+\newblock {\em Automation in Construction} {\bf 2022}, {\em 139},~104299.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.autcon.2022.104299}}.
 
 \end{thebibliography}

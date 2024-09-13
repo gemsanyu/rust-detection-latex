@@ -9,45 +9,45 @@ Warning--empty booktitle in Pascual2014
 Warning--empty publisher in Pascual2014
 Warning--empty booktitle in Petricca2016
 Warning--empty journal in Bianchi2021Dataset
-You've used 29 entries,
+You've used 30 entries,
             2887 wiz_defined-function locations,
-            792 strings with 11497 characters,
-and the built_in function-call counts, 14757 in all, are:
-= -- 1303
-> -- 933
-< -- 23
-+ -- 406
-- -- 246
-* -- 1181
-:= -- 2165
-add.period$ -- 108
-call.type$ -- 29
-change.case$ -- 29
-chr.to.int$ -- 29
-cite$ -- 33
-duplicate$ -- 670
-empty$ -- 1136
-format.name$ -- 319
-if$ -- 3279
+            799 strings with 11676 characters,
+and the built_in function-call counts, 15135 in all, are:
+= -- 1338
+> -- 949
+< -- 24
++ -- 413
+- -- 250
+* -- 1214
+:= -- 2221
+add.period$ -- 112
+call.type$ -- 30
+change.case$ -- 30
+chr.to.int$ -- 30
+cite$ -- 34
+duplicate$ -- 689
+empty$ -- 1169
+format.name$ -- 327
+if$ -- 3359
 int.to.chr$ -- 1
-int.to.str$ -- 29
-missing$ -- 29
-newline$ -- 167
-num.names$ -- 95
-pop$ -- 332
+int.to.str$ -- 30
+missing$ -- 30
+newline$ -- 173
+num.names$ -- 98
+pop$ -- 339
 preamble$ -- 0
-purify$ -- 29
+purify$ -- 30
 quote$ -- 0
-skip$ -- 543
+skip$ -- 554
 stack$ -- 0
-substring$ -- 699
-swap$ -- 208
+substring$ -- 719
+swap$ -- 212
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
+type$ -- 207
 warning$ -- 4
-while$ -- 106
+while$ -- 109
 width$ -- 0
-write$ -- 410
+write$ -- 424
 (There were 4 warnings)
