@@ -21,7 +21,7 @@
     \acro{mp}[MP]{movement pruning}
     \acro{nea}[NEA]{naturally eroded wall}
     \acro{relu}[ReLU]{rectified linear unit}
-    \acro{resnet101}[ResNet-101]{101 layers residual network}
+    \acro{resnet101}[ResNet-101]{101 layer residual network}
     \acro{sgd}[SGD]{stochastic gradient descent}
     \acro{sscs}[SSCS]{steel corrosion condition state}
     \acro{svm}[SVM]{support vector machine}
@@ -138,39 +138,39 @@ as it can lead to structural failures, safety risks, and significant economic lo
 Therefore, effective
 inspection is paramount in early detection 
 metal corrosion.
-Recently, computer vision methods,
+Computer vision methods,
 especially deep learning (DL)-based methods,
 for aiding visual detection of metal corrosion have
-been gaining popularity. DL-based methods
+recently been gaining popularity. DL-based methods
 not only make the inspection more efficient,
 but also maintain high accuracy in corrosion detection.
-Although DL-based methods offer promising enhancement
+Although these methods offer promising enhancement
 to the inspection tasks, one needs to consider
-its high computational requirements, especially
+their high computational requirements, especially
 for deploying them in remote areas where only
-resource-constrained devices, e.g., edge devices
-are affordable. Therefore, it is essential
+resource-constrained devices (e.g., edge devices)
+are affordable. It is thus essential
 to develop lightweight DL models that can be 
 deployed on edge devices, ensuring efficient
 corrosion detection even in resource-constrained environments.
-This study proposes to develop lightweight DL models
+This research develops lightweight DL models
 for metal corrosion segmentation by pruning the models.
 The aim of pruning is to remove
 redundant parameters, thus reducing the size
-and computational load, without
-compromising much on performance. In this study,
-we evaluate five image segmentation models, i.e., 
-U-Net, U-Net++, FPN, LinkNet and MA-Net,
-and three pruning algorithms, i.e., 
-linear, AGP and movement pruning, on two metal corrosion
-image segmentation datasets, i.e., NEA and SSCS datasets. 
+and computational load without
+compromising much on performance. In this study
+we evaluate five image segmentation models 
+(i.e., U-Net, U-Net++, FPN, LinkNet and MA-Net)
+and three pruning algorithms
+(i.e., linear, AGP and movement pruning) on two metal corrosion
+image segmentation datasets (i.e., NEA and SSCS datasets). 
 The conducted experimental study shows that we can train
-the models, e.g., FPN, and prune the model
+the models (e.g., FPN) and prune the model
 up to  $90\%$ sparsity with less than $10\%$
-IoU reduction on SSCS dataset and less than
-$5\%$ IoU reduction on NEA dataset.}
+IoU reduction on the SSCS dataset and less than
+$5\%$ IoU reduction on the NEA dataset.}
 
-\keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)} 
+\keyword{metal corrosion, computer vision, image segmentation, deep learning, pruning} 
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
@@ -185,32 +185,32 @@ $5\%$ IoU reduction on NEA dataset.}
 
 Metal corrosion is an ever-present problem in infrastructure maintenance around the world. If left undetected
 and unattended, corrosion can cause serious damage to the infrastructure
-resulting in premature end-of-life of the infrastructures,
-direct and indirect financial loss, 
-and ultimately poses critical safety risks. It 
+resulting in its premature end-of-life,
+direct and indirect financial losses, 
+and ultimately critical safety risks. It 
 is no wonder that the global cost estimates of
 corrosion is \$25 trillion~\cite{Koch2016}.
 Therefore, it is imperative to
 inspect infrastructures for metallic corrosion
-regularly. Corrosion detection and maintenance
-are vital to prevent metallic corrosion~\cite{Wang2019}.
+regularly, and corrosion detection and maintenance
+are vital to prevent it~\cite{Wang2019}.
 
-Commonly, corrosion detection is conducted 
+Corrosion detection is commonly conducted 
 visually by experts in the field. The inspection is 
-also conducted on images collected by \ac{uav}, especially
+also conducted on images collected by an \ac{uav}, especially
 on hard-to-reach parts of the structure.
 Afterward, the collected images are analyzed to detect
 corrosion. Nowadays, various computer-based
 methods have been proposed to detect corrosion
 from these images. The methods range from
-traditional image processing techniques,
-e.g., color space-based detection~\cite{Igoe2016} 
-and texture analysis-based detection~\cite{Pascual2014},
-to machine learning-based methods, e.g.,
+traditional image processing techniques
+(e.g., color space-based detection~\cite{Igoe2016} 
+and texture analysis-based detection~\cite{Pascual2014})
+to machine learning-based methods (e.g.,
 \ac{svm}~\cite{Chen2012} and various 
-\ac{cnn}-based models~\cite{Nash2022, Liu2023}.
-\ac{dl}-based methods have been gaining more
-popular due to its faster process while achieving
+\ac{cnn}-based models~\cite{Nash2022, Liu2023}).
+\Ac{dl}-based methods have been gaining 
+popularity due to their faster process while achieving
 even pixel-level accuracy. 
 
 Various \ac{dl}-based methods have been proposed
@@ -226,70 +226,70 @@ Papamarkou et al.~\cite{Papamarkou2021}
 trained ResNets~\cite{He2016} to detect corrosion
 on tiled images of nuclear fuel canisters' surfaces
 with acceptable performance. Zhang et al.~\cite{Zhang2021}
-trained an SE-ResNet~\cite{Hu2018} for
+trained SE-ResNet~\cite{Hu2018} for a
 rust image segmentation task on an original metal
 corrosion image dataset collected by conducting 
-salt-spray atmospheric accelerated corrosion test.
+a salt-spray atmospheric accelerated corrosion test.
 Nash et al.~\cite{Nash2019}
-studies the impact of dataset label quality 
-and size for training an \ac{fcn}~\cite{Long2015}
+studied the impact of dataset label quality 
+and size for training a \ac{fcn}~\cite{Long2015}
 for semantic segmentation of metal corrosion. 
 They found that a large noisy dataset (250 images)
 is better than a very small expertly labelled 
-dataset (10 images). Afterward, 
-Nash et al.~\cite{Nash2022} incorporate
+dataset (10 images).
+Nash et al.~\cite{Nash2022} incorporated
 Bayesian methods into \ac{fcn}
 to quantify the uncertainty estimates 
 of the predicted class so that the decision-makers
 can be more informed about the model's confidence and 
 to improve risk management. Liu et al.~\cite{Liu2023}
 proposed a dual (spatial and channel) attention module,
-and incorporated it into ResNet and \ac{fpn} for 
+and incorporated it into ResNet and \ac{fpn} for a
 metal corrosion segmentation task. They showed that
 the proposed dual attention module can improve the performance
 of the models on both datasets of metal corrosion
 images in the natural and laboratory environment. 
 
-Despite its qualities, one also needs to consider
+Despite their qualities, one also needs to consider
 the required computational resources, including
-the financial cost, networking, and accessibility,
-in deploying \ac{dl}-based solutions.
+financial cost, networking, and accessibility,
+when deploying \ac{dl}-based solutions.
 This is even more important when one wants to 
-deploy \ac{dl}-based solutions in remote
+deploy these solutions in remote
 areas where only edge devices can be afforded.
 Therefore, to reduce computational resource requirements
 of these methods, lightweight 
-models can be a solution for these limitations.
+models are one solution for these limitations.
 
-In this study, we propose to produce lightweight
+In this study, we propose lightweight
 models for the multiclass image segmentation
 task for pixel-level metal corrosion detection.
 We make the models lightweight by pruning the neural 
-network's weights. We propose to prepare the lightweight models
+network's weights. We prepare the lightweight models
 by training the models, and pruning their weights, followed
 by fine-tuning the pruned models. 
-In this study,
+In this study
 we experimentally evaluate five neural network
-architectures, i.e., \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
+architectures: \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
 U-NET++~\cite{Zhou2018}, \ac{manet}~\cite{Fan2020}, and 
 LinkNet~\cite{Chaurasia2017}. For each of these architectures,
-we employ \ac{resnet101}~\cite{He2016} pre-trained on ImageNet
+we employ a \ac{resnet101}~\cite{He2016} pre-trained on the ImageNet
 dataset as the feature extractor. Three pruning strategies
-are considered in the pruning stage, namely
+are considered in the pruning stage:
 \ac{lp}, \ac{agp} algorithm~\cite{Han2017},
 and \ac{mp} algorithm~\cite{Sanh2020}. We prune
 the models up to $90\%$ sparsity and 
 evaluate their performance based on their
 achieved \ac{iou}. The methods
-are evaluated on two metal corrosion image datasets,
-i.e., the \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and 
+are evaluated on two metal corrosion image datasets: 
+the \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and 
 the \ac{nea} dataset \cite{Liu2023}. 
 
 \section{Background}
 \subsection{Architecture}
 U-NET~\cite{Ronneberger2015} is an extension to
  \ac{fcn}~\cite{Long2015} where the architecture
- comprises two parts, the left contracting path
+ comprises two parts: the left contracting path
  and the right expanding path. The contracting
  path is a repeated component comprising two $3\times 3$
  unpadded convolutions, a \ac{relu}, and a $2\times 2 $ max
@@ -310,50 +310,50 @@ DenseNet~\cite{Huang2017}. Instead of directly concatenating
 the feature maps from the contracting path onto the corresponding
 layers in the exapnsive path, as is done in U-Net, U-Net++
 has several skip connections between the corresponding layers.
-Each skip connection unit takes the features map from the all
+Each skip connection unit takes the features map from all
 previous units at the same level and the upsampled feature map
 for its immediate lower unit. The addition of these
-skip connections minimize the loss of semantic information
+skip connections minimizes the loss of semantic information
 between the two paths.
 
 \ac{manet}~\cite{Fan2020} also extends U-Net by integrating
 skip-connections and, more importantly, the self-attention mechanism.
-Two new blocks based on self-attention mechanism, i.e., 
+Two new blocks based on self-attention mechanism (i.e., 
 position-wise attention block in the bottleneck
-part (in-between the contracting and expanding paths),
+part in-between the contracting and expanding paths
 and multi-scale fusion attention block in the expanding
-path, are proposed to capture spatial and channel
+path) are proposed to capture spatial and channel
 dependencies of the feature maps. The proposed dual
 attention mechanism enhances the feature representation ability
 of the model resulting in better performance
-of the model for liver and tumor segmentation
+of the model for the liver and tumor segmentation
 task compared to other state-of-the-art models,
-e.g., U-Net, U-Net++, and Densely \ac{fcn}~\cite{Krishna2018}.
+such as U-Net, U-Net++, and Densely \ac{fcn}~\cite{Krishna2018}.
 
-Similary to the previous U-Net-based architectures,
+Similar to the previous U-Net-based architectures,
 \ac{fpn}~\cite{Lin2017} can also basically 
-be divided into two paths, the bottom-up path,
+be divided into two paths: the bottom-up path
 and the top-down path. The bottom-up
 path computes a feature hierarchy consisting
 of several scaled feature maps with a scaling
 step of two. The path comprises several network
-\textit{stages}, each stage consists of multiple layers
+\textit{stages} where each stage consists of multiple layers
 producing output maps of the same size.
 Each stage equals one pyramid level in \ac{fpn}.
 The top-down path generates higher resolution
 features by upsampling the feature maps from
 the higher pyramid levels, resulting
-in spatially coarser but semantically stronger feature maps
+in spatially coarser yet semantically stronger feature maps
 compared to the higher pyramid levels.
-The resulted features are combined with
+The resultant features are combined with
 the feature from the bottom-up
 path of the same pyramid level through a lateral
 connection. The design of \ac{fpn}
 is flexible in the choice of module
 for the building blocks.
-However, the experimental evaluation show by 
+However, the experimental evaluation of
 Lin et al.~\cite{Lin2017} on varying the modules only
-shows marginal difference in the resulted model's
+shows marginal difference in the resultant model's
 performance. Therefore, similar to the original study,
 this study opts for the simple design choice.
 
@@ -362,7 +362,7 @@ to an encoder-decoder structure.
 The encoder and decoder are further
 divided into several levels.
 The encoder employed in LinkNet is a pre-trained
-network, e.g., ResNet18 that
+network, like ResNet18, which
 efficiently extracts high-level features from
 the input. The decoder upsamples the feature
 to its original size using transposed
@@ -371,7 +371,7 @@ encoder is combined with the input
 to the decoder of the same level via
 a residual network. The use of lightweight
 pretrained encoder block and smaller
-number of parameters compared to, e.g., 
+number of parameters compared to the likes of 
 U-Net-based architectures, results 
 in a more efficient model without
 majorly sacrificing its performance,
@@ -380,128 +380,127 @@ tasks.
 
 
 \subsection{Pruning algorithms}
-In this study, we evaluate three pruning algorithms, i.e., 
+In this study we evaluate three pruning algorithms:
 \ac{lp} algorithm, \ac{agp} algorithm~\cite{Han2017},
 and \ac{mp} algorithm~\cite{Sanh2020}. Before
 describing the three algorithms, we briefly discuss
-the common notation of pruning neural network. 
+the common notation of neural network pruning. 
 Let $\vec{W}, |\vec{W}|=d$ be
 the weight or parameters of a given model,
 and $d$ is the number of the parameters. A
-binary mask $\vec{M}, |\vec{M}|=d,$
+binary mask $\vec{M}, |\vec{M}|=d$
 is applied to $\vec{W}$ so that the output of
 the model becomes:
 \begin{equation}
     \vec{y} = (\vec{W} \odot \vec{M})\vec{x}, 
 \end{equation}
 where $\odot$ is the Hadamard or element-wise product.
-The zero-ed out elements in $\vec{W}$ as a result
-of the mask application is denoted
+The zero-ed out elements in $\vec{W}$ as the result
+of the mask application are denoted
 as the pruned weights. The binary mask 
 is commonly computed based on a score $\vec{S}$
-with its element correspond to each element of $\vec{M}$.
-One of the method to compute $\vec{M}$ based on $\vec{S}$
+with its element corresponding to each element of $\vec{M}$.
+One method to compute $\vec{M}$ based on $\vec{S}$
 is:
 \begin{equation}
     M_i = \begin{cases}
-        1, &\text{if } S_i \text{ in the top } \zeta\% \\
+        1, &\text{if } S_i \text{ is in the top } \zeta\% \\
         0, &\text{otherwise,}
     \end{cases}
 \end{equation}
-with  $\zeta$ is the desired sparsity ratio of the model's
+with  $\zeta$ being the desired sparsity ratio of the model's
 parameters.
 
-
 These pruning algorithms
-are gradual pruning algorithms, i.e., 
-they increase the sparsity of the model weights gradually.
+are gradual pruning algorithms; i.e., 
+they gradually increase the sparsity of the model weights.
 \ac{lp} is the most basic pruning algorithm where the
-sparsity of the neural network at hand will be increased
+sparsity of the neural network at hand increases
 linearly throughout the pruning phase.
 The target sparsity increases linearly as given by:
 \begin{equation}
     \zeta(t) = \zeta_0 + \frac{t-t_0}{n_p \Delta t} \zeta_f,
 \end{equation}
-with $\zeta(t)$ the target sparsity at the $t$-th 
-training iteration, $n_p$ the total number of pruning steps, 
-$\Delta t$ the training iteration interval between
-two pruning steps, $t_0$ the starting training iteration,
- $\zeta_f$ the final target sparsity, and $\zeta_i$ the initial
-sparsity which is usually $\zeta_0=0$.
+with $\zeta(t)$ as the target sparsity at the $t$-th 
+training iteration, $n_p$ is the total number of pruning steps, 
+$\Delta t$ is the training iteration interval between
+two pruning steps, $t_0$ is the starting training iteration,
+ $\zeta_f$ is the final target sparsity, and $\zeta_0$ is 
+ the initial sparsity that is usually $\zeta_0=0$.
 One training iteration means one update step of the model's weights,
-which commonly comprises one forward and backward pass, and 
+which commonly comprises one forward and backward pass and 
 one update step of the optimizer. 
 
-\ac{agp} is similar to \ac{lp}, but it uses cubic sparsity
-schedule to calculate the target sparsity, as given by:
+\ac{agp} is similar to \ac{lp}, but it uses the cubic sparsity
+schedule to calculate target sparsity, as given by:
 \begin{equation}
     \zeta(t) = \zeta_f + (\zeta_0-\zeta_f)(1-\frac{t-t_0}{\Delta t n_p})^3.
 \label{eq:methods:pruning:agp}
 \end{equation}
 Calculating the target sparsity using \eqref{eq:methods:pruning:agp}
 results in more pruned weights at the early training iterations
-when there are expected to be more redundant connections
+when more redundant connections are expected
 compared to the later pruning stage. 
 
 Various immediate pruning methods (as opposed to gradual)
-can be employed at every pruning steps of \ac{lp}
-and \ac{agp}. In this study, we use the Taylor
+can be employed at every pruning step of \ac{lp}
+and \ac{agp}. In this study we use the Taylor
 pruning method \cite{Molchanov2019}. This method
-compute the importance of a parameter, say $W_i$,
+computes the importance of a parameter, say $W_i$,
 based on the difference between the prediction errors
 produced by the model with and without that parameter,
-as given by:
+given by:
 \begin{equation}
     \mathcal{I}_{i}(W) = \left( E(\mathcal{D}, \vec{W}) - E(\mathcal{D}, W \mid W_i=0) \right)^2.
 \end{equation}
 To avoid the expensive computation of evaluating 
-$|\vec{W}|$ different versions of the model, then
+$|\vec{W}|$ different versions of the model,
 the difference can be approximated using the first-order
 Taylor expansion as:
 \begin{equation}
     \mathcal{I}^{(1)}_{i}(W) \triangleq \left( g_i W_i \right)^2,
 \end{equation}
-with $g_i = \frac{\delta E}{\delta W_i}$ is the $i$-th
+with $g_i = \frac{\delta E}{\delta W_i}$ as the $i$-th
 element of the gradient $\vec{g}$. To approximate
 the joint importance of a set of parameters,
-say $\mathcal{I}^{(1)}_P(\vec{W}) \triangleq \sum_{j \in P} 
+$\mathcal{I}^{(1)}_P(\vec{W}) \triangleq \sum_{j \in P} 
 \mathcal{I}^{(1)}_{j}(W)$, with $P = \{j_1,\ldots, j_{|P|}\},
 \forall j \in P, 0\leq j\leq |W|$.
 
-Lastly, we briefly describe \ac{mp}. 
+We briefly describe \ac{mp}. 
 While most pruning algorithms retain the parameters
 that are far from zero, \ac{mp} retains the parameters
 that are moving away from zero. Based on this,
-it can be denoted that \ac{mp} derived
+\ac{mp} derives
 the importance of parameters from the first-order
-information instead of the zeroth-order information.
+information instead of the raw parameters.
 The score variable $\vec{S}$ now accumulates this movement
-of the parameters after $t'$ training iterations as given by:
+of the parameters after $t'$ training iterations, given by:
 \begin{equation}
     S^{(t')}_i = - \alpha_S \sum_{t<t'} \left(\frac{\delta L}{\delta W_i}\right)^{(t)} W^{(t)}_i,
 \end{equation}
 where $L$ is the employed loss function, and $\vec{W}^{(t)}$ is the
 model parameters at the $t$-th training iteration. The schedule
 of sparsity level for each training iteration in \ac{mp}
-is the same as \ac{agp}, i.e., as given by \eqref{eq:methods:pruning:agp}.
+is the same as \ac{agp}, given by \eqref{eq:methods:pruning:agp}.
 
 \section{Proposed Method}
 This section describes the proposed framework
 to train lightweight semantic segmentation models
-for rust detection, the datasets and the experimental settings.
+for rust detection, the datasets, and the experimental settings.
 The conducted experimental study is depicted in Figure~\ref{fig:flowchart-study}.
 As previously mentioned, in this study we consider five
-architectures, namely \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
+architectures: \ac{fpn}~\cite{Lin2017}, U-NET~\cite{Ronneberger2015},
 U-NET++~\cite{Zhou2018}, \ac{manet}~\cite{Fan2020}, and 
 LinkNet~\cite{Chaurasia2017}. First, we train the models
-on each dataset. Afterward, the trained models are pruned
-using the three considered pruning algorithms, 
-i.e., \ac{lp}, \ac{agp} algorithm~\cite{Han2017},
-and \ac{mp} algorithm~\cite{Sanh2020}. Therefore,
-at the end of the pruning stage, we obtained 15 pruned models.
+on each dataset. The trained models are pruned
+using the three considered pruning algorithms: 
+\ac{lp}, \ac{agp} algorithm~\cite{Han2017},
+and \ac{mp} algorithm~\cite{Sanh2020}. At the end of the 
+pruning stage, we obtain 15 pruned models.
 Each pruned model is then further fine-tuned to try to recover
-the loss in performance due to the pruning process. Afterward,
-we evaluate the models performance on each dataset to find
+the loss in performance due to the pruning process. We evaluate 
+the models' performance on each dataset to find
 the best performing model and pruning algorithm on each dataset. 
 
 \begin{figure}[htbp]
@@ -513,36 +512,36 @@ the best performing model and pruning algorithm on each dataset.
 \end{figure}
 
 Throughout all stages, the models are trained to minimize
-the Tversky loss function~\cite{Salehi2017} as given
+the Tversky loss function~\cite{Salehi2017}, given
 by:
 \begin{equation}
     L(\hat{\alpha}, \hat{\beta}) = \frac{\text{TP}}{\text{TP}+
     \hat{\alpha}\text{FP} +  \hat{\beta}\text{FN}},
 \end{equation}
-where TP denotes the true positives, FP the false positives
-and FN the false negatives. The two hyperparameters of 
+where TP denotes true positives, FP is false positives,
+and FN is false negatives. The two hyperparameters of 
 the loss function are $\hat{\alpha}$ and $\hat{\beta}$
 that adjust the trade-off between false positives and
 false negatives. The metric used to evalute the performance of the trained
-models is the \ac{iou}, which is given by:
+models is \ac{iou}, which is given by:
 \begin{equation}
     IoU = \frac{\text{TP}}{\text{TP}+\text{FP}+\text{FN}}.
 \end{equation}
 
 
 \subsection{Datasets}
-In this study, the models are trained and evaluated on two metal corrosion image
-datasets, namely, the \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and 
-the \ac{nea} dataset \cite{Liu2023}. \ac{sscs} is a set of 
+In this study the models are trained and evaluated on two metal corrosion image
+datasets: \ac{sscs} dataset \cite{Bianchi2021Dataset,Bianchi2022Journal} and  
+\ac{nea} dataset \cite{Liu2023}. \ac{sscs} is a set of 
 images from the structural inspection domain,
 especially from the bridge inspection report 
 by the Virginia Department of Transportation. 
 The dataset comprises 440 annotated steel corrosion condition state images,
 which are split into 396 training images and 44 testing images.
-The corrosion state in the images are split into four corrosion
-class categories, i.e., good (background), fair, poor and severe corrosion state.
+The corrosion state in the images is split into four corrosion
+class categories: good, fair, poor and severe.
 An example of the image and its corresponding labels
-from \ac{sscs} dataset is depicted in Figure~\ref{fig:dataset:ccsc-example}.
+from \ac{sscs} dataset appear in Figure~\ref{fig:dataset:ccsc-example}.
 These images are resized into $512\times 512$ images in this study, as is also done
 in the original paper \cite{Bianchi2022Journal}.
 
@@ -554,20 +553,20 @@ in the original paper \cite{Bianchi2022Journal}.
     \end{center}
 \end{figure}
 
-\ac{nea} dataset comprises images of corroded metal wall
-in natural environment collected by a \ac{uav}.
+The \ac{nea} dataset comprises images of corroded metal wall
+in a natural environment collected by \ac{uav}.
 The dataset comprises 292 images of size $1280\times 720$.
-The annotations comprise three class categories; one no corrosion class
+The annotations comprise three class categories: one no corrosion class
 and two corrosion classes. Unfortunately ,the difference
 between the two corrosion classes is not clearly stated. 
 In the original study \cite{Liu2023}, the authors
-do not differentiate between the two corrosion class,
+do not differentiate between the two corrosion classes,
 thus rendering the task as a binary semantic segmentation
-task. However, in this study, 
+task. However, in this study
 we assume that one class is for poor corrosion state, 
 while the other is for severe corrosion state, as shown
-in Figure~\ref{fig:dataset:nea-example}. Therefore,
-this study uses \ac{nea} dataset for a multiclass semantic
+in Figure~\ref{fig:dataset:nea-example}. We thus use 
+\ac{nea} dataset for a multiclass semantic
 segmentation task.
 
 \begin{figure}[htbp]
@@ -578,25 +577,25 @@ segmentation task.
     \end{center}
 \end{figure}
 
-We can further describe the datasets by looking at their label
+We further describe the datasets by looking at their label
 distribution represented by the total number of pixels for each 
-class. The label distributions for \ac{sscs} and \ac{nea}
-dataset are depicted in Figure~\ref{fig:label-distribution:ccsc}
+class. The label distributions for the \ac{sscs} and \ac{nea}
+datasets are depicted in Figure~\ref{fig:label-distribution:ccsc}
 and Figure~\ref{fig:label-distribution:nea}, respectively.
-We can argue that a class imbalance occurs in both datasets
-even between only the corrosion-related labels. In \ac{sscs}
+We argue that a class imbalance occurs in both datasets
+even between only the corrosion-related labels. In the \ac{sscs}
 dataset, only $1.4\%$ of the total pixels are of the severe
 corrosion label, while the fair corrosion label occupies
-most pixels ($12.4\%$), followed by poor corrosion ($7.2\%$).
-In \ac{nea} dataset, the severe corrosion label occupies
+the most pixels ($12.4\%$), followed by poor corrosion ($7.2\%$).
+In the \ac{nea} dataset, the severe corrosion label occupies
 five times more pixels than the poor label. As a side remark,
 one can argue that the label "good" is a misnomer. The 
-label "good" can not refer to a metallic surface in good 
-condition because the background pixels are also labeled as good.
+label "good" cannot refer to a metallic surface in good 
+condition, because the background pixels are also labeled as good.
 Therefore, one may also try to split the label "good" into
 the background and actual metallic surface with good conditions
 and study the impact of splitting the label on the performance
-of the trained models. However, we left this attempt for future studies.
+of the trained models. However, we leave this attempt for future studies.
 
 \begin{figure}[!ht]
   \centering
@@ -623,34 +622,34 @@ single NVIDIA GeForce GTX 2080 Ti and
 Intel i9-7900X with 20 cores. The source code in Pytorch is 
 available at (github link provided before publishing).
 
-In this experimental study, we use \ac{sgd} with
+In this experimental study we use \ac{sgd} with
 momentum as the optimizer and cyclical learning
 rate scheduler~\cite{Smith2017}.
-The momentum of the \ac{sgd} optimizer is set to 0.5
+The momentum of the \ac{sgd} optimizer is set to 0.5,
 and the batch size is set to 4.
 In addition, the hyperparameters for the cyclical learning
-rate scheduler is set to $lr^{\min}_0=0.0001, lr^{\max}_0=0.01$ 
+rate scheduler are set to $lr^{\min}_0=0.0001, lr^{\max}_0=0.01$, 
 and $\delta_t=2000$. The hyperparameters for the optimizer and 
 the learning rate scheduler are the same for the first
-training stage, the pruning stage and the fine-tuning stage.
+training stage, the pruning stage, and the fine-tuning stage.
 
-In the first training stage, the models
-will be trained for $T=100$ epochs. In the pruning stage,
-the models will be pruned for $T_{\text{pruning}}=50$ epochs.
-Afterward, the pruned models will be fine-tuned for another 
-$T_{\text{tuning}}=100$ epochs. For \ac{mp} algorithm,
+In the first training stage the models
+are trained for $T=100$ epochs. In the pruning stage,
+the models are pruned for $T_{\text{pruning}}=50$ epochs.
+Afterward, the pruned models are fine-tuned for another 
+$T_{\text{tuning}}=100$ epochs. For the \ac{mp} algorithm,
 we set $t_i=\frac{20N}{4}$ iterations and $t_f=\frac{10N}{4}$.
 For the linear and \ac{agp} algorithms, the pruning
-is done gradually in interval of ten epochs, thus the pruning
-will be done five times in the span of $T_{\text{pruning}}=50$ epochs.
+is done gradually in intervals of ten epochs. Thus, the pruning
+is done five times in the span of $T_{\text{pruning}}=50$ epochs.
 
-Throughout all training stages,
-the training set will be split into two, $80\%$ for the 
+Throughout all training stages
+the training set is split into two, $80\%$ for the 
 training and $20\%$ for validation. The data augmentation
 methods applied to the training dataset are affine operations,
 flipping, rotation, scaling, and random cropping.
 The target final sparsity we evaluate in this study
-is $\zeta_f \in \{0.2, 0.5, 0.9\}$. We will evaluate the performance
+is $\zeta_f \in \{0.2, 0.5, 0.9\}$. We evaluate the performance
 of each combination of model, pruning algorithm, and
 target sparsity based on the achieved \ac{iou} on
 the testing dataset. In total there are $5\times 3\times 3=45$
@@ -663,17 +662,17 @@ obtained by the models throughout the epochs
 of training is shown in 
 Figure~\ref{fig:results:training:iou}.
 The faded curve is the actual value, while the 
-the bold curve is the exponential moving average
-values with $\alpha=0.1$. The figure shows that
-starting from around the 50-th epoch, the \ac{iou}
-obtained by the models has plateaud.
+bold curve is the exponential moving average
+values with $\alpha=0.1$. The figure shows 
+starting from around the 50-th epoch that the \ac{iou}
+obtained by the models has plateaued.
 The learning progress of \ac{fpn} is more stable
-compared to other models, as it shows smaller variance
+compared to other models, as it shows smaller variance,
 and it started with higher \ac{iou} compared to the other models.
-On the other hand, other models showed great improvement
+On the other hand, other models shows great improvement
 throughout the training progress as their starting \ac{iou}
-is very small, even less than $0.1$ for LinkNet and U-Net
-on \ac{sscs} dataset.
+is very small and even less than $0.1$ for LinkNet and U-Net
+on the \ac{sscs} dataset.
 
 \begin{figure}[htbp]
     \begin{center}
@@ -683,12 +682,12 @@ on \ac{sscs} dataset.
     \end{center}
 \end{figure}
 
-Afterward, we briefly describe the pruning
+We now describe the pruning
 progress based on the validation \ac{iou} of
-each combination of model, pruning algorithm
+each combination of model, pruning algorithm,
 and sparsity. We choose several representative
-figure to be shown in this figure, while 
-the rest are accessible in the Github repository.
+figures to be shown, while 
+the others are accessible in the Github repository.
 Figure~\ref{fig:results:pruning:iou} shows the validation
 \ac{iou} obtained by the models throughout the pruning
 stage and the fine-tuning stage. As previously described,
@@ -702,80 +701,80 @@ the actual and the exponential moving average values.
       \begin{subfigure}[t]{.29\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/unet_linear_0.5_NEAtraining_progress.pdf}
-        \caption{U-Net, \ac{lp}, and $\zeta_f=0.5$ for \ac{nea} dataset}
+        \caption{U-Net, \ac{lp}, and $\zeta_f=0.5$ for the \ac{nea} dataset}
         \label{fig:results:pruning:iou:unet-lp-0.5-nea}
       \end{subfigure}
       \hfill
       \begin{subfigure}[t]{.29\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/unet_agp_0.5_NEAtraining_progress.pdf}
-        \caption{U-Net, \ac{agp}, and $\zeta_f=0.5$ for \ac{nea} dataset}
+        \caption{U-Net, \ac{agp}, and $\zeta_f=0.5$ for the \ac{nea} dataset}
         \label{fig:results:pruning:iou:unet-agp-0.5-nea}
       \end{subfigure}
       \hfill
       \begin{subfigure}[t]{.29\textwidth} 
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/unet_movement_0.5_NEAtraining_progress.pdf}
-        \caption{U-Net, \ac{mp}, and $\zeta_f=0.5$ for \ac{nea} dataset}
+        \caption{U-Net, \ac{mp}, and $\zeta_f=0.5$ for the \ac{nea} dataset}
         \label{fig:results:pruning:iou:unet-mp-0.5-nea}
       \end{subfigure}
       \vskip\baselineskip
       \begin{subfigure}[t]{.29\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/fpn_linear_0.5_CCSCtraining_progress.pdf}
-        \caption{\ac{fpn}, \ac{lp}, and $\zeta_f=0.5$ for \ac{sscs} dataset}
+        \caption{\ac{fpn}, \ac{lp}, and $\zeta_f=0.5$ for the \ac{sscs} dataset}
         \label{fig:results:pruning:iou:fpn-lp-0.5-sscs}
       \end{subfigure}
       \hfill
       \begin{subfigure}[t]{.29\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/fpn_agp_0.5_CCSCtraining_progress.pdf}
-        \caption{\ac{fpn}, \ac{agp}, and $\zeta_f=0.5$ for \ac{sscs} dataset}
+        \caption{\ac{fpn}, \ac{agp}, and $\zeta_f=0.5$ for the \ac{sscs} dataset}
         \label{fig:results:pruning:iou:fpn-agp-0.5-sscs}
       \end{subfigure}
       \hfill
       \begin{subfigure}[t]{.29\textwidth}
         \centering
         \includegraphics[width=.95\linewidth]{figures/pruning/fpn_movement_0.5_CCSCtraining_progress.pdf}
-        \caption{\ac{fpn}, \ac{mp}, and $\zeta_f=0.5$ for \ac{sscs} dataset}
+        \caption{\ac{fpn}, \ac{mp}, and $\zeta_f=0.5$ for the \ac{sscs} dataset}
         \label{fig:results:pruning:iou:fpn-mp-0.5-sscs}
       \end{subfigure}
       \caption{The validation IoU in the pruning and fine-tuning stages}
       \label{fig:results:pruning:iou}
 \end{figure}
 
-Firstly, we can see that for \ac{lp} and \ac{agp},
-the volatility in validation \ac{iou} is muchh less
+First, we see for \ac{lp} and \ac{agp},
+the volatility in validation \ac{iou} is much less
 compared to that of \ac{mp} in both models and datasets.
 For \ac{lp} and \ac{agp}, there is a 
 notable reduction in validation \ac{iou}
-every $\Delta t$ or when the sparsity increases.
+every $\Delta t$ or when sparsity increases.
 However, for $\zeta_f$, the validation \ac{iou}
 can be retained and even improved after the fine-tuning phase.
-On the other hand, we can notice very high volatility
+On the other hand, we notice very high volatility
 in validation \ac{iou} when \ac{mp} is employed.
 In addition, these great changes in validation \ac{iou}
-not only occured in the pruning phase, but even more
-in the fine-tuning phase where the sparsity
+not only occur in the pruning phase, but even more so
+in the fine-tuning phase where sparsity
 of the model is retained. Therefore, we
-can denote that based on the validation \ac{iou},
-\ac{lp} and \ac{agp} are preferred because they can
+state based on the validation \ac{iou} that
+\ac{lp} and \ac{agp} are preferred, because they can
 better retain the models' performance 
 after pruning and have a more stable learning process.
 
-Finally, we will evaluate the performance of
+Second, we evaluate the performance of
 each combination of model and pruner based on
 the achieved \ac{iou} on the testing dataset
 as shown in Figure~\ref{fig:results:test:nea}
 and Figure~\ref{fig:results:test:sscs}. Several
 noteworthy observations can be made on the
-two figures. Firstly, for \ac{agp} and \ac{lp},
+two figures. For \ac{agp} and \ac{lp},
 the achieved \ac{iou} decreases as $\zeta_f$
-increases. We can also note that
+increases. We also note that
 \ac{fpn} and LinkNet best retain \ac{iou}
 on $\zeta_f=0.9$ compared to the other models
 on \ac{sscs} dataset with \ac{agp} and \ac{lp}.
-Meanwhile, on \ac{nea}
+On the \ac{nea}
 dataset, U-Net and \ac{fpn} best retain \ac{iou}
 on $\zeta_f=0.9$ with \ac{agp}, while LinkNet and
 U-Net best retain \ac{iou} with \ac{lp}.
@@ -803,7 +802,7 @@ U-Net best retain \ac{iou} with \ac{lp}.
         \caption{\ac{mp}}
         \label{fig:results:test:nea:mp}
       \end{subfigure}
-      \caption{The testing IoU for various pruning algorithms in increasing sparsity on NEA dataset}
+      \caption{The testing IoU for various pruning algorithms in increasing sparsity on the NEA dataset}
       \label{fig:results:test:nea}
 \end{figure}
 
@@ -829,12 +828,12 @@ U-Net best retain \ac{iou} with \ac{lp}.
         \caption{\ac{mp}}
         \label{fig:results:test:sscs:mp}
       \end{subfigure}
-      \caption{The testing IoU for various pruning algorithms in increasing sparsity on SSCS dataset}
+      \caption{The testing IoU for various pruning algorithms in increasing sparsity on the SSCS dataset}
       \label{fig:results:test:sscs}
 \end{figure}
 
-Interestingly, it can be observed on both \ac{nea}
-and \ac{sscs} datasets, \ac{mp} retains
+For both the \ac{nea}
+and the \ac{sscs} datasets, \ac{mp} retains
 better \ac{iou} with all models on $\zeta_f=0.9$
 compared to \ac{agp} and \ac{lp}.
 However, contrary to \ac{agp} and \ac{lp},
@@ -849,32 +848,32 @@ and fine-tuning phase, and a more granular
 choice of $\zeta_f$. We leave these additional experimental
 evaluations for our future study.
 
-Lastly, we will show representative examples
+Third, we show representative examples
 of the predicted labels generated by the pruned
 models. Other visualizations are provided in the GitHub repository.
 Figure~\ref{fig:results:pruning:visualization:nea} 
 shows the labels generated by \ac{fpn} 
 with varying sparsity with the three pruning methods
-on \ac{nea} dataset. 
+on the \ac{nea} dataset. 
 The displayed figures
-can represent the difference in testing \ac{iou}
-previously described. As can be observed, 
+represent the difference in testing \ac{iou}
+previously described. Asobserved, 
 using \ac{agp} or \ac{lp},
 the generated label mask up to $\zeta_f=0.5$ is
 still very similar compared to the initial label mask,
 which is resembled by the testing \ac{iou}
 that is retained up to $\zeta_f=0.5$. 
 On the other hand, the model pruned with \ac{mp}
-with $\zeta_f=0.5$ generates significantly different
+at $\zeta_f=0.5$ generates significantly different
 label masks, where some poor labels are missing and
 some severe areas are misclassified as poor areas.
 For models pruned up to $\zeta_f=0.9$, where 
 the testing \ac{iou} deteriorates significantly, 
-we can observe that all models can only classify
+we observe that all models only classify
 the pixels into one class. \ac{agp} and \ac{mp}
-classified all corroded areas into severe areas,
-while \ac{lp} classified all into poor areas. Most
-corroded areas are severe areas, therefore 
+classify all corroded areas into severe areas,
+while \ac{lp} classify all into poor areas. Most
+corroded areas are severe areas, and therefore 
 the models pruned by \ac{agp} and \ac{mp}
 have more pixels correctly labeled, compared to the model
 pruned by \ac{lp}. This explains 
@@ -882,31 +881,32 @@ why \ac{lp} has the worst testing \ac{iou} on
 $\zeta_f=0.9$ compared to \ac{agp} and \ac{mp}.
 
 Figure~\ref{fig:results:pruning:visualization:ccsc}
-shows the label generated by LinkNet on \ac{sscs} dataset. As shown by the figures,
+shows the label generated by LinkNet on the \ac{sscs} dataset. 
+As shown by the figures,
 the labels generated by LinkNet pruned by \ac{agp}
 and \ac{lp} up to $\zeta_f=0.5$ are still quite similar to the
-labels generated by the un-pruned model. Similar to 
+labels generated by the unpruned model. Similar to 
 Figure~\ref{fig:results:pruning:visualization:nea},
 for $\zeta_f=0.9$, the models pruned by \ac{agp} and
-\ac{lp} can only predict two labels. This observation
-can explain the change in \ac{iou} obtained by \ac{agp}
+\ac{lp} only predict two labels. This observation
+explains the change in \ac{iou} obtained by \ac{agp}
 and \ac{lp} as $\zeta_f$ increases. However,
 the model pruned by \ac{mp} fails miserably, even
 for $\zeta_f=0.2$. Starting from $\zeta_f=0.2$ the generated labels
 still show a little resemblance to the original labels, but we
-can notice how the background is being mislabeled more
-and strange Moir\'{e} pattern appears. For $\zeta_f=0.5$, the
+notice how the background is being mislabeled more,
+and a strange Moir\'{e} pattern appears. For $\zeta_f=0.5$, the
 labels are already random and all over the place. Finally,
 for $\zeta_f=0.9$, the model fails to predict any corrosion 
-label. Interestingly, this observation can explain the
+label. Interestingly, this observation explains the
 \ac{iou} obtained by \ac{mp}. The labels are all over the place
-when $\zeta_f=0.5$, therefore the \ac{iou} is lowest. On the other hand,
+when $\zeta_f=0.5$, and therefore the \ac{iou} is lowest. On the other hand,
 despite failing to predict any corrosion label at $\zeta_f=0.9$, its \ac{iou}
 is higher than $\zeta_f=0.2$ and $\zeta_f=0.5$. This is because the
-good label, i.e., background and metallic surface with good
-condition, has significantly more pixel numbers than
+good label (i.e., background and metallic surface with good
+condition) has significantly more pixel numbers than
 corrosion-related labels, as shown in Figure~\ref{fig:label-distribution:ccsc}. 
-Therefore, simply labeling all pixels as good can result in higher \ac{iou} on average
+Therefore, simply labeling all pixels as good results in higher \ac{iou} on average
 compared to wrongly mislabelling the corrosion state.  
 
 \begin{figure}[!ht]
@@ -981,7 +981,7 @@ compared to wrongly mislabelling the corrosion state.
         \caption{\ac{mp}, $\zeta_f=0.9$}
         \label{fig:results:pruning:visualization:nea-fpn-mp-0.9}
       \end{subfigure}
-      \caption{Example of image and the label mask generated by FPN on NEA dataset}
+      \caption{Example of image and the label mask generated by FPN on the NEA dataset}
       \label{fig:results:pruning:visualization:nea}
   \end{figure}
 
@@ -1057,78 +1057,70 @@ compared to wrongly mislabelling the corrosion state.
       \caption{\ac{mp}, $\zeta_f=0.9$}
       \label{fig:results:pruning:visualization:ccsc-linknet-mp-0.9}
     \end{subfigure}
-    \caption{Example of image and the label mask generated by LinkNet on SSCS dataset}
+    \caption{Example of image and the label mask generated by LinkNet on the SSCS dataset}
     \label{fig:results:pruning:visualization:ccsc}
 \end{figure}
 
-% \begin{figure}[htbp]
-%     \begin{center}
-%     \includegraphics[width=0.9\textwidth]{figures/f1_training_progress.pdf}
-%     \caption{Validation F1 score on the first training stage}
-%     \label{fig:results:training:f1}
-%     \end{center}
-% \end{figure}
 These results indicate that we can produce lightweight
 metal corrosion segmentation models by the training, 
 pruning, and fine-tuning framework as is done in this study.
-We have shown that the models, especially \ac{fpn},
+We show that the models, especially \ac{fpn}
 and LinkNet, can be pruned with \ac{agp}
 and \ac{lp} up to $\zeta_f=0.5$ without
 significant reduction in performance. 
 Further study is needed to improve the performance of the models
 if we aim to prune the models up to $\zeta_f=0.9$. 
 On the other hand, we have
-significant performance reduction 
-by pruning the model, e.g., pruning LinkNet by \ac{mp}
-on \ac{sscs} dataset. This indicates that not all
+significant performance reduction when we 
+prune LinkNet by \ac{mp}
+on the \ac{sscs} dataset. This indicates that not all
 architecture is directly suitable to be pruned by \ac{mp}.
 Further study is needed to find the component of the
 architecture that is too sensitive to be pruned
 and the component suitable to be pruned. 
 
-In addition,
-the results of LinkNet pruning on \ac{sscs}
+The results of LinkNet pruning on the \ac{sscs} dataset
 also shows one of the effects of the class imbalance in
 the dataset. Due to the significant difference in the pixel
 number between good and corrosion-related labels, 
 a model can achieve a higher \ac{iou} on average by not 
 predicting at all rather than slight mislabelling. Therefore,
 further study must incorporate methods to address the class imbalance,
-e.g., using weighted loss functions or re-sampling techniques.
+such as using weighted loss functions or re-sampling techniques.
 One other approach to address the class imbalance is by improving
 the dataset quality. As discussed previously, we can separate
 the label for the background and the actual metallic surface with
-good condition, and improve the consistency in the labeling. 
-Such an attempt to extend and improve the dataset quality is 
+good condition and improve consistency in the labeling. 
+Such an attempt to extend and improve dataset quality is 
 both relevant and necessary, given the scarcity
-of visual structural inspection datasets, including
+of visual structural inspection datasets, especially
 those for metal corrosion inspection~\cite{Bianchi2022}. 
 
 \section{Conclusions}
-In this study, we have trained and evaluated five 
-segmentation models, i.e., \ac{fpn}, U-Net, U-Net++, 
-LinkNet and \ac{manet}. The results indicate that for 
+This research trains and evaluates five 
+segmentation models: \ac{fpn}, U-Net, U-Net++, 
+LinkNet, and \ac{manet}. The results indicate that for 
 these two datasets, \ac{fpn} and LinkNet perform better compared to 
 the other three trained models.
 The models can be pruned, especially with \ac{lp}
 and \ac{agp}, up to $\zeta_f=0.5$ or 50\% of 
-the parameters are removed with
+the parameters removed with
 little reduction in performance compared to
 the original trained model. However,
 the performance of the model deteriorates significantly
 when pruned up to $\zeta_f=0.9$ with all three pruning
 algorithms. Significant performance reduction is also
 observed when using \ac{mp} with several architectures,
-e.g., LinkNet, on \ac{sscs} dataset.
+like LinkNet, on the \ac{sscs} dataset.
 This suggests that further analysis
 and study are needed to improve the performance
 of the models if we aim to prune the model up to $\zeta_f=0.9$.
-This future study can include hyperparameter tuning
+A future study can include hyperparameter tuning
 for the fine-tuning stage, a more granular choice
 of $\zeta_f$ to find the sweet spot of sparsity
 and performance, evaluating other pruning algorithms,
 and addressing the class imbalance in the datasets.
-In addition, further study can also aim to expand
+In addition, further study can expand
 and improve the quality of the limited dataset on 
 metal corrosion image segmentation.
 
